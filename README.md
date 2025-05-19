@@ -36,6 +36,8 @@ LandingPages-FE/
 
   ├── 🛠️ static/         # Layout wrappers (Header, Footer)
 
+  ├── 🛠️ styles/         # Tailwind styles file, or any other css file
+
   ├── 🗂️ App.jsx          # App shell with routes/layout
 
   └── 🚀 main.jsx         # Vite entry point
