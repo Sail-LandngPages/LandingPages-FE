@@ -21,25 +21,23 @@ This project powers the public-facing pages of the Tech Talent Program. It featu
 
 LandingPages-FE/
 │
-├── public/              # Static assets (e.g., favicon, images)
+├── 📂 public/              # Static assets (e.g., favicon, images)
 │
-├── src/                 # Main source code
-│   ├── assets/          # Images, fonts, icons, videos
-│   ├── components/      # Reusable UI components (Navbar, Footer, etc.)
-│   ├── pages/           # Page views (Home.jsx, About.jsx, etc.)
-│   ├── layouts/         # Layout wrappers (optional)
-│   ├── styles/          # Tailwind & custom CSS
-│   ├── App.jsx          # App shell with routes/layout
-│   └── main.jsx         # Vite entry point
+├── 📂 src/                 # Main source code
+│   ├── 🖼️ assets/          # Images, fonts, icons, videos
+│   ├── 🧩 components/      # Reusable UI components (Navbar, Footer, etc.)
+│   ├── 📄 pages/           # Page views (Home.jsx, About.jsx, etc.)
+│   ├── 🛠️ layouts/         # Layout wrappers (optional)
+│   ├── 🎨 styles/          # Tailwind & custom CSS
+│   ├── 🗂️ App.jsx          # App shell with routes/layout
+│   └── 🚀 main.jsx         # Vite entry point
 │
-├── index.html           # Root HTML file for Vite
-├── tailwind.config.js   # Tailwind configuration
-├── postcss.config.js    # PostCSS configuration
-├── vite.config.js       # Vite configuration
-├── package.json         # Project metadata and dependencies
-└── README.md            # Project documentation
-
-
+├── 🌍 index.html           # Root HTML file for Vite
+├── ⚙️ tailwind.config.js   # Tailwind configuration
+├── 🧰 postcss.config.js    # PostCSS configuration
+├── ⚡ vite.config.js       # Vite configuration
+├── 📦 package.json         # Project metadata and dependencies
+└── 📖 README.md            # Project documentation
 
 
 ## 🛠️ Getting Started
