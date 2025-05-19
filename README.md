@@ -19,23 +19,10 @@ This project powers the public-facing pages of the Tech Talent Program. It featu
 
 
 
-## 🗂️ Folder Structure
+:
 
-LandingPages-FE/
-├── public/ # Static assets
-├── src/
-│ ├── assets/ # Images, fonts, icons
-│ ├── components/ # Reusable UI components
-│ ├── pages/ # Main pages (Home, About, Tracks)
-│ ├── static/ # Optional shared layout components
-│ ├── styles/ # Tailwind and global styles
-│ ├── App.jsx # Main app component
-│ └── main.jsx # Entry point
-├── index.html
-├── tailwind.config.js
-├── postcss.config.js
-├── vite.config.js
-└── package.json
+📁 Project Folder Structure
+<pre> LandingPages-FE/ ├── <span style="color:#FFD700">public/</span> # Static assets (e.g., favicon, images) │ ├── <span style="color:#00BFFF">src/</span> # Main source code │ ├── <span style="color:#90EE90">assets/</span> # Images, fonts, videos, icons │ ├── <span style="color:#90EE90">components/</span> # Reusable UI components (Navbar, Footer, etc.) │ ├── <span style="color:#90EE90">pages/</span> # Page views (Home.jsx, About.jsx, etc.) │ ├── <span style="color:#90EE90">layouts/</span> # Layout wrappers (optional) │ ├── <span style="color:#90EE90">styles/</span> # Tailwind & custom CSS │ ├── App.jsx # App shell with routes/layout │ └── main.jsx # Vite entry point │ ├── index.html # Root HTML file for Vite ├── tailwind.config.js # Tailwind configuration ├── postcss.config.js # PostCSS configuration ├── vite.config.js # Vite configuration ├── package.json # Project metadata and dependencies └── README.md # Project documentation </pre>
 
 
 
