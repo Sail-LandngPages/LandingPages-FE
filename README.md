@@ -19,8 +19,6 @@ This project powers the public-facing pages of the Tech Talent Program. It featu
 
 
 
-:
-
 LandingPages-FE/
 │
 ├── public/              # Static assets (e.g., favicon, images)
@@ -29,7 +27,7 @@ LandingPages-FE/
 │   ├── assets/          # Images, fonts, icons, videos
 │   ├── components/      # Reusable UI components (Navbar, Footer, etc.)
 │   ├── pages/           # Page views (Home.jsx, About.jsx, etc.)
-│   ├── static/          # Static components
+│   ├── layouts/         # Layout wrappers (optional)
 │   ├── styles/          # Tailwind & custom CSS
 │   ├── App.jsx          # App shell with routes/layout
 │   └── main.jsx         # Vite entry point
@@ -44,12 +42,13 @@ LandingPages-FE/
 
 
 
-
 ## 🛠️ Getting Started
 
 ### 1. Clone the repository
 
 git clone https://github.com/Sail-LandngPages/LandingPages-FE.git
+
+
 cd LandingPages-FE
 
 
