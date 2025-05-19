@@ -38,7 +38,6 @@ LandingPages-FE/
 
   ├── 🎨 styles/          # Tailwind & custom CSS
 
-
   ├── 🗂️ App.jsx          # App shell with routes/layout
 
   └── 🚀 main.jsx         # Vite entry point
