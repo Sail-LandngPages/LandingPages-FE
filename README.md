@@ -14,15 +14,32 @@ This project powers the public-facing pages of the Tech Talent Program. It featu
 
 - **Framework**: [Vite](https://vitejs.dev/) + [React](https://reactjs.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Routing**: [React Router](https://reactrouter.com/) *(optional)*
-- **Deployment**: Netlify / Vercel / GitHub Pages *(customize if needed)*
+- **Routing**: [React Router](https://reactrouter.com/) 
+- **Deployment**:  Vercel
 
 
 
 :
 
-📁 Project Folder Structure
-<pre> LandingPages-FE/ ├── <span style="color:#FFD700">public/</span> # Static assets (e.g., favicon, images) │ ├── <span style="color:#00BFFF">src/</span> # Main source code │ ├── <span style="color:#90EE90">assets/</span> # Images, fonts, videos, icons │ ├── <span style="color:#90EE90">components/</span> # Reusable UI components (Navbar, Footer, etc.) │ ├── <span style="color:#90EE90">pages/</span> # Page views (Home.jsx, About.jsx, etc.) │ ├── <span style="color:#90EE90">layouts/</span> # Layout wrappers (optional) │ ├── <span style="color:#90EE90">styles/</span> # Tailwind & custom CSS │ ├── App.jsx # App shell with routes/layout │ └── main.jsx # Vite entry point │ ├── index.html # Root HTML file for Vite ├── tailwind.config.js # Tailwind configuration ├── postcss.config.js # PostCSS configuration ├── vite.config.js # Vite configuration ├── package.json # Project metadata and dependencies └── README.md # Project documentation </pre>
+LandingPages-FE/
+│
+├── public/              # Static assets (e.g., favicon, images)
+│
+├── src/                 # Main source code
+│   ├── assets/          # Images, fonts, icons, videos
+│   ├── components/      # Reusable UI components (Navbar, Footer, etc.)
+│   ├── pages/           # Page views (Home.jsx, About.jsx, etc.)
+│   ├── static/          # Static components
+│   ├── styles/          # Tailwind & custom CSS
+│   ├── App.jsx          # App shell with routes/layout
+│   └── main.jsx         # Vite entry point
+│
+├── index.html           # Root HTML file for Vite
+├── tailwind.config.js   # Tailwind configuration
+├── postcss.config.js    # PostCSS configuration
+├── vite.config.js       # Vite configuration
+├── package.json         # Project metadata and dependencies
+└── README.md            # Project documentation
 
 
 
