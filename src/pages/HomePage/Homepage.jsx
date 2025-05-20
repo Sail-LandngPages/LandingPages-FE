@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../../static/Header'
 
 const Homepage = () => {
   return (
-    <div className='text-2xl text-center'>WELCOME TO THE LANDING PAGE</div>
+    <div className='text-2xl text-center'>
+      <Header/>
+    </div>
   )
 }
 
