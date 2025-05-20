@@ -10,7 +10,7 @@ const NavBar = () => {
 
         </div>
 
-        <div className='non'>
+        <div className=''>
             <RxHamburgerMenu/>
         </div>
 
