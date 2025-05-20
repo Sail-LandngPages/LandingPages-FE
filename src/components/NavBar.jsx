@@ -1,4 +1,5 @@
 import React from 'react'
+import { RxHamburgerMenu } from "react-icons/rx";
 import sail_Logo from "../assets/images/svg/sail_Logo.svg"
 
 const NavBar = () => {
@@ -9,9 +10,13 @@ const NavBar = () => {
 
         </div>
 
+        <div className='none'>
+            <RxHamburgerMenu/>
+        </div>
+
 
         <div className="links flex gap-8 text-[#627A95]">
-           <p className='sora text-sm hover:text-[#133C8A]'>Home</p>
+           <p className='sora text-sm hover:text-[#343639] hover:'>Home</p>
            <p className='sora text-sm hover:text-[#133C8A]'>Courses</p>
            <p className='sora text-sm hover:text-[#133C8A]'>Testimonials</p>
            <p className='sora text-sm hover:text-[#133C8A]'>FAQs</p>
