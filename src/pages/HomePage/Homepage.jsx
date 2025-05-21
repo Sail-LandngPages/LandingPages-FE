@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../static/Header";
 import Hero from "../../components/Hero/Hero";
+import Footer from "../../static/Footer";
 
 const Homepage = () => {
   return (
@@ -11,6 +12,7 @@ const Homepage = () => {
       <main className="flex-1 mt-[56px]">
         <Hero />
       </main>
+      <Footer />
     </div>
   );
 };
