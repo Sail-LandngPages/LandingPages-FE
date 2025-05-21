@@ -32,7 +32,7 @@ const NavBar = () => {
           <img src={sail_Logo} alt="Company Logo" className="h-8 sm:h-10" />
         </div>
 
-        {/* Hamburger Icon */}
+       
         <div
           className="sm:hidden text-2xl text-[#627A95] cursor-pointer"
           onClick={() => setIsSidebarOpen(true)}
