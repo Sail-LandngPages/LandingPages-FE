@@ -20,7 +20,7 @@ const NavBar = () => {
   const handleMouseLeave = (e) => {
     // Check if the mouse leaves both "Courses" and dropdown area
     if (!coursesRef.current.contains(e.relatedTarget) && !dropdownRef.current.contains(e.relatedTarget)) {
-      setIsCoursesOpen(false); // Hide dropdown
+      setIsCoursesOpen(false); 
     }
   };
 
