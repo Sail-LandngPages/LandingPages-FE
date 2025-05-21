@@ -49,11 +49,11 @@ const NavBar = () => {
             className="relative"
             onMouseEnter={handleMouseEnter} 
             onMouseLeave={handleMouseLeave}
-            ref={coursesRef} // Set ref to track "Courses" text hover
+            ref={coursesRef} 
           >
-            <p className="sora hover:text-[#133C8A] cursor-pointer">
+            <p className="sora hover:text-[#133C8A] cursor-pointer flex items-center">
               Courses 
-              <span className="ml-2"><RiArrowDropDownLine/></span> 
+              <span className='text-[18px]'><RiArrowDropDownLine/></span> 
             </p>
             
             {isCoursesOpen && (
