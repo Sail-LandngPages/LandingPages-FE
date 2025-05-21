@@ -89,11 +89,11 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Sidebar */}
+     
       <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
 
-      {/* Add a margin-top to the body or content area to avoid overlapping */}
-      <div className="mt-20"> {/* Adjust mt-20 to avoid content being hidden under the navbar */}
+     
+      <div className="mt-20"> 
         {/* Rest of your content */}
       </div>
     </>
