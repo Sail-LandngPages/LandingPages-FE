@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
+import { RiArrowDropDownLine } from "react-icons/ri";
+
 import sail_Logo from "../assets/images/svg/sail_Logo.svg";
 import Sidebar from './SideBar'; 
 
@@ -51,7 +53,7 @@ const NavBar = () => {
           >
             <p className="sora hover:text-[#133C8A] cursor-pointer">
               Courses 
-              <span className="ml-2">&#9660;</span> {/* Dropdown arrow */}
+              <span className="ml-2"><RiArrowDropDownLine/></span> 
             </p>
             
             {isCoursesOpen && (
