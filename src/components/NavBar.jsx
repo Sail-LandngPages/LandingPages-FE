@@ -7,31 +7,31 @@ import Sidebar from './SideBar';
 
 const NavBar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [isCoursesOpen, setIsCoursesOpen] = useState(false); // Manage dropdown visibility
+  const [isCoursesOpen, setIsCoursesOpen] = useState(false);
 
-  // Refs to track the hover area for "Courses" and dropdown list
   const coursesRef = useRef(null);
   const dropdownRef = useRef(null);
 
   const handleMouseEnter = () => {
-    setIsCoursesOpen(true); 
+    setIsCoursesOpen(true);
+  };
 
   const handleMouseLeave = (e) => {
-    
-    if (!coursesRef.current.contains(e.relatedTarget) && !dropdownRef.current.contains(e.relatedTarget)) {
-      setIsCoursesOpen(false); 
+    if (
+      !coursesRef.current.contains(e.relatedTarget) &&
+      !dropdownRef.current.contains(e.relatedTarget)
+    ) {
+      setIsCoursesOpen(false);
     }
   };
 
   return (
     <>
       <div className="flex justify-between items-center px-4 py-2 bg-white/50 backdrop-blur-md h-20 sm:px-6 md:px-10 w-full fixed top-0 left-0 z-40">
-      
         <div className="logo-container flex-shrink-0">
           <img src={sail_Logo} alt="Company Logo" className="h-8 sm:h-10" />
         </div>
 
-       
         <div
           className="sm:hidden text-2xl text-[#627A95] cursor-pointer"
           onClick={() => setIsSidebarOpen(true)}
@@ -39,24 +39,24 @@ const NavBar = () => {
           <RxHamburgerMenu />
         </div>
 
-        
         <div className="hidden sm:flex gap-6 text-[#627A95] text-sm">
           <p className="sora hover:text-[#343639] cursor-pointer">Home</p>
 
-          
-          <div 
+          <div
             className="relative"
-            onMouseEnter={handleMouseEnter} 
+            onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            ref={coursesRef} 
+            ref={coursesRef}
           >
             <p className="sora hover:text-[#133C8A] cursor-pointer flex items-center">
-              Courses 
-              <span className='text-[18px]'><RiArrowDropDownLine/></span> 
+              Courses
+              <span className="text-[18px]">
+                <RiArrowDropDownLine />
+              </span>
             </p>
-            
+
             {isCoursesOpen && (
-              <div 
+              <div
                 className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md text-sm"
                 ref={dropdownRef}
               >
@@ -78,7 +78,6 @@ const NavBar = () => {
           <p className="sora hover:text-[#133C8A] cursor-pointer">FAQs</p>
         </div>
 
-      
         <div className="hidden sm:block">
           <input
             type="text"
@@ -88,13 +87,9 @@ const NavBar = () => {
         </div>
       </div>
 
-     
       <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
 
-     
-      <div className="mt-20"> 
-      
-      </div>
+      <div className="mt-20"></div>
     </>
   );
 };
