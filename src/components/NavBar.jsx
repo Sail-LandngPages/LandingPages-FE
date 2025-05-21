@@ -40,11 +40,11 @@ const NavBar = () => {
           <RxHamburgerMenu />
         </div>
 
-        {/* Desktop Nav */}
+        
         <div className="hidden sm:flex gap-6 text-[#627A95] text-sm">
           <p className="sora hover:text-[#343639] cursor-pointer">Home</p>
 
-          {/* Courses Dropdown */}
+          
           <div 
             className="relative"
             onMouseEnter={handleMouseEnter} 
@@ -94,7 +94,7 @@ const NavBar = () => {
 
      
       <div className="mt-20"> 
-        {/* Rest of your content */}
+      
       </div>
     </>
   );
