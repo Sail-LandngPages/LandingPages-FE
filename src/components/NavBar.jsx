@@ -27,7 +27,7 @@ const NavBar = () => {
   return (
     <>
       <div className="flex justify-between items-center px-4 py-2 bg-white/50 backdrop-blur-md h-20 sm:px-6 md:px-10 w-full fixed top-0 left-0 z-40">
-        {/* Logo */}
+      
         <div className="logo-container flex-shrink-0">
           <img src={sail_Logo} alt="Company Logo" className="h-8 sm:h-10" />
         </div>
