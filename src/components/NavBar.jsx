@@ -14,8 +14,7 @@ const NavBar = () => {
   const dropdownRef = useRef(null);
 
   const handleMouseEnter = () => {
-    setIsCoursesOpen(true); // Show dropdown
-  };
+    setIsCoursesOpen(true); 
 
   const handleMouseLeave = (e) => {
     
