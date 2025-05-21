@@ -79,7 +79,7 @@ const NavBar = () => {
           <p className="sora hover:text-[#133C8A] cursor-pointer">FAQs</p>
         </div>
 
-        {/* Search Input */}
+      
         <div className="hidden sm:block">
           <input
             type="text"
