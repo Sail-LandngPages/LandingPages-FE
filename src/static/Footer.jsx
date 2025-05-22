@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
+import { CiYoutube } from "react-icons/ci";
+
 
 
 const Footer = () => {
@@ -24,6 +26,10 @@ const Footer = () => {
           </a>
           <a href="https://www.linkedin.com/company/sail-innovation-lab/" className="hover:text-blue-200 transition">
             <FaLinkedinIn />
+          </a>
+
+          <a href="https://www.linkedin.com/company/sail-innovation-lab/" className="hover:text-blue-200 transition">
+            <CiYoutube />
           </a>
         </div>
       </div>
