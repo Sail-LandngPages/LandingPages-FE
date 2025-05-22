@@ -15,10 +15,8 @@ const Footer = () => {
 
       
         <div className="flex gap-4 text-white text-xl">
-          <a href="#" className="hover:text-blue-200 transition">
-            <FaFacebookF />
-          </a>
-          <a href="#" className="hover:text-blue-200 transition">
+        
+          <a href="https://x.com/sailnigeria?lang=en" className="hover:text-blue-200 transition">
             <FaXTwitter />
           </a>
           <a href="#" className="hover:text-blue-200 transition">
