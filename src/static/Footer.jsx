@@ -28,7 +28,7 @@ const Footer = () => {
             <FaLinkedinIn />
           </a>
 
-          <a href="https://www.linkedin.com/company/sail-innovation-lab/" className="hover:text-blue-200 transition">
+          <a href="https://www.https://youtube.com/@sailnigeria8135?si=CnMixWryoGAdom-b.com/company/sail-innovation-lab/" target='_blank' className="hover:text-blue-200 transition">
             <CiYoutube />
           </a>
         </div>
