@@ -4,6 +4,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 import sail_Logo from "../assets/images/svg/sail_Logo.svg";
 import Sidebar from './SideBar'; 
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -67,7 +68,7 @@ const NavBar = () => {
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">BackEnd</li>
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Generative AI</li>
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">BlockChain Development</li>
-                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Data Science</li>
+                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer"><Link to={'/data-science'}> Data Science </Link></li>
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Software Development</li>
                 </ul>
               </div>

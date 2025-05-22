@@ -1,0 +1,35 @@
+.join-container{
+    display: flex;
+    flex-direction: column;
+    background: url('/joinBG.png');
+    background-size: contain;
+    height: 100vh;
+}
+.join-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px ;
+}
+.join-title{
+    color: #133C8A;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: Raleway;
+    margin-bottom: 5px;
+}
+.join-paragraph{
+    letter-spacing: 1px;
+    color: #627A95;
+    font-family: Sora;
+    font-style: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.join-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    
+}

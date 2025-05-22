@@ -1,0 +1,36 @@
+.learn-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0px 25px;
+    margin-bottom: 30px;
+}
+.learn-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px ;
+    margin-bottom: 70px;
+}
+.learn-title{
+    color: #2F327D;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Sora;
+    margin-bottom: 5px;
+}
+.learn-paragraph{
+    letter-spacing: 1px;
+    color: #696984;
+    font-family: Sora;
+    font-style: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.learn-cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0px;
+    
+}
