@@ -28,7 +28,7 @@ const Sidebar = ({ isOpen, onClose }) => {
         </div>
 
         
-        <nav className="flex flex-col gap-6 px-6 mt-8 text-[#133C8A] text-lg font-medium">
+        <nav className="flex flex-col gap-6 px-6 mt-8 text-[#ffff] text-lg font-medium">
           <a href="#" className="hover:text-[#343639] transition-colors">Home</a>
           <a href="#" className="hover:text-[#343639] transition-colors">Courses</a>
           <a href="#" className="hover:text-[#343639] transition-colors">Testimonials</a>
