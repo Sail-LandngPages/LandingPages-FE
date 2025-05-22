@@ -21,7 +21,7 @@ const Footer = () => {
           <a href="https://x.com/sailnigeria?lang=en" className="hover:text-blue-200 transition">
             <FaXTwitter />
           </a>
-          <a href="https://www.instagram.com/sailnigeria?igsh=MWlzcnRrcTI4Z25hOA==" className="hover:text-blue-200 transition">
+          <a href="https://www.instagram.com/sailnigeria?igsh=MWlzcnRrcTI4Z25hOA==" target='_blank' className="hover:text-blue-200 transition">
             <FaInstagram />
           </a>
           <a href="https://www.linkedin.com/company/sail-innovation-lab/" target='_blank' className="hover:text-blue-200 transition">
