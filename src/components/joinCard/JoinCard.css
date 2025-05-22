@@ -1,0 +1,33 @@
+/* .join-container{
+   
+} */
+.joinCard{
+    display: flex;
+    align-items: center;
+    width: 520px;
+    height:100px;
+    box-shadow: 1px 1px 3px grey;
+    background-color: white;
+    padding: 15px;
+    /* border-radius: 25px; */
+    border: transparent;
+    margin-bottom: 50px;
+}
+.joinCard-content{
+    width: 400px;
+    height: 120px;
+    padding-top: 20px;
+    margin-left: 20px;
+    /* background-color: pink; */
+}
+.joinCard-title{
+    font-size: 24px;
+    font-family: Sora;
+    font-weight: bold;
+}
+.joinCard-paragraph{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Sora;
+    color: #627A95;
+}

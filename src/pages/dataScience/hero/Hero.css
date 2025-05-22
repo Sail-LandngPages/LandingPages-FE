@@ -1,0 +1,37 @@
+.hero-container{
+    background: url('/dataScienceHeroBg.png');
+    background-size: cover;
+    height: calc(100vh - 57px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-title{
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 40px;
+
+    span{
+        color: #5BBCB4;
+    }
+}
+
+.hero-paragraph{
+    color: white;
+    font-family: Sora;
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 90px;
+}
+.join-now{
+    background-color: #5BBCB4;
+    color: #fff;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 20px;
+    font-family: Sora;
+    font-weight: 600;
+}
