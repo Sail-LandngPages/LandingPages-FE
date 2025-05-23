@@ -1,22 +1,23 @@
 import React from 'react'
 import { CheckCircle } from "lucide-react";
 import pix from "../assets/images/pix.png"
+import Stats from '../stats/Stats';
 const benefits = [
     {
       title: "Practical Learning",
-      description: "Learn by doing with real‑world projects and case studies",
+      description: "Work on real-world design projects.",
     },
     {
       title: "Industry Experts",
-      description: "Learn from professionals with years of experience",
+      description: "Learn from top designers & UX professionals.",
     },
     {
       title: "Job Readiness",
-      description: "Develop skills that employers are looking for",
+      description: "Build a portfolio that stands out in the industry.",
     },
     {
       title: "Flexible Learning Format",
-      description: "Study at your own pace with our flexible program",
+      description: "Choose between online, hybrid, or in-person learning.",
     },
     {
       title: "100% Scholarship Available",
@@ -25,9 +26,9 @@ const benefits = [
   ];
   
   const stats = [
-    { number: "2800+", label: "Graduates" },
-    { number: "80%", label: "Employment rate" },
-    { number: "3000+", label: "Partner companies" },
+    { number: "2800+ ", label: "Graduates" } ,
+    { number: "80% ", label: "Employment rate" } ,
+    { number: "3000+", label: "Partner companies" } ,
   ];
   
 
@@ -86,13 +87,14 @@ const Program = () => {
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-3  mt-10 ">
-        {stats.map(({ number, label }) => (
+      <div className="grid grid-cols-3  mt-10 gap-0.5 ">
+        {/* {stats.map(({ number, label }) => (
           <div key={label}>
             <div className="text-2xl font-bold text-gray-900">{number}</div>
             <div className="text-sm text-gray-600">{label}</div>
           </div>
-        ))}
+        ))} */}
+        <Stats/>
       </div>
     </section>
     </div>
