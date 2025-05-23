@@ -4,6 +4,8 @@ import frame from "../assets/images/frame.png"
 import frame2 from "../assets/images/frame2.png"
 import frame3 from "../assets/images/framer3.png"
 import frame4 from "../assets/images/frame4.png"
+import frame5 from "../assets/images/frame5.png"
+import frame6 from "../assets/images/frame6.png"
 
 const Learn = () => {
     const contentRef = useRef(null)
@@ -120,7 +122,7 @@ const Learn = () => {
                 <div ref={scrollbarRef} className="w-4 h-full bg-gray-200 relative flex-shrink-0">
                     <div
                         ref={thumbRef}
-                        className="w-3 bg-blue-600 rounded-full absolute left-0.5 cursor-pointer hover:bg-blue-700 transition-colors"
+                        className="w-3 bg-[#133C8A] rounded-full absolute left-0.5 cursor-pointer hover:bg-blue-700 transition-colors"
                         onMouseDown={handleThumbMouseDown}
                     />
                 </div>
@@ -232,10 +234,10 @@ const Learn = () => {
       {/* Text Content */}
       <div className="flex-1 ">
         <h3 className="text-xl md:text-2xl font-semibold text-black mb-4 -ml-30 -mt-40">
-          Fundamentals of UI/UX Design
+        Design Thinking & Problem-Solving
         </h3>
         <p className="text-gray-600 text-sm md:text-base  leading-relaxed -ml-30">
-          Learn the core principles of UI/UX design to create simple, smooth, and accessible user experiences. We’ll cover visual hierarchy, typography, colors, clarity in interaction elements, design systems, and key timeless layouts for all screen sizes.
+        Design thinking helps you understand user needs, define clear problems, and create practical solutions. Through research, brainstorming, and testing, you’ll develop better ways to solve real challenges. This approach ensures your designs are useful, user-friendly, and effective in meeting business and user goals.
         </p>
       </div>
 
@@ -246,7 +248,7 @@ const Learn = () => {
           alt="UI/UX Design Fundamentals"
           className="w-full rounded-lg shadow-lg"
         /> */}
-        <img src={frame} alt="" className='w-full h-120 ' />
+        <img src={frame5} alt="" className='w-full h-120 ' />
       </div>
                     
       
@@ -257,10 +259,10 @@ const Learn = () => {
       {/* Text Content */}
       <div className="flex-1 ">
         <h3 className="text-xl md:text-2xl font-semibold text-black mb-4 -ml-30 -mt-40">
-          Fundamentals of UI/UX Design
+        Portfolio Development & Career Growth Strategies
         </h3>
         <p className="text-gray-600 text-sm md:text-base  leading-relaxed -ml-30">
-          Learn the core principles of UI/UX design to create simple, smooth, and accessible user experiences. We’ll cover visual hierarchy, typography, colors, clarity in interaction elements, design systems, and key timeless layouts for all screen sizes.
+        How to build a strong design portfolio that highlights your creativity, skills, and problem-solving abilities. Get guidance on how to present your work, tell your design story, and stand out to employers and clients. You will also get tips on job applications, interviews, and grow your career in the design industry.
         </p>
       </div>
 
@@ -271,7 +273,7 @@ const Learn = () => {
           alt="UI/UX Design Fundamentals"
           className="w-full rounded-lg shadow-lg"
         /> */}
-        <img src={frame} alt="" className='w-full h-120 ' />
+        <img src={frame6} alt="" className='w-full h-120 ' />
       </div>
                     
       

@@ -17,8 +17,8 @@ const ProductDesign = () => {
         <ProductHero/>
         <Program/>
         <Learn/>
-        <ProgramDetails/>
         <WhoApply/>
+        <ProgramDetails/>
         <Testimony/>
         <Community/>
         <Faq/>
