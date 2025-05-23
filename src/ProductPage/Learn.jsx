@@ -2,7 +2,8 @@ import React from 'react'
 import { useRef, useState, useEffect } from "react"
 import frame from "../assets/images/frame.png"
 import frame2 from "../assets/images/frame2.png"
-import frame3 from "../assets/images/frame3.png"
+import frame3 from "../assets/images/framer3.png"
+import frame4 from "../assets/images/frame4.png"
 
 const Learn = () => {
     const contentRef = useRef(null)
