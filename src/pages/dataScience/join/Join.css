@@ -4,6 +4,7 @@
     background: url('/joinBG.png');
     background-size: contain;
     height: 100vh;
+    margin-bottom: 120px;
 }
 .join-content{
     display: flex;
@@ -25,14 +26,14 @@
     font-style: 24px;
     font-weight: 400;
     margin-bottom: 20px;
+    padding: 0 360px;
 }
 .join-cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 120px;
-    margin-top: 30px;
-    
+    padding: 0 70px;
+    margin-top: 30px; 
 }
 
 

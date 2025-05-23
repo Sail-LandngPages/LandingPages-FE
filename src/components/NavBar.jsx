@@ -1,10 +1,10 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { Link } from 'react-router-dom';
-
+import  {Link}  from 'react-router-dom';
 import sail_Logo from "../assets/images/svg/sail_Logo.svg";
 import Sidebar from './SideBar';
+
 
 const NavBar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -16,6 +16,7 @@ const NavBar = () => {
 
   const handleMouseLeave = () => {
     setIsCoursesOpen(false);
+
   };
 
   return (
@@ -33,6 +34,7 @@ const NavBar = () => {
         </div>
 
         <div className="hidden sm:flex gap-6 text-[#627A95] text-sm">
+
           <p className="sora hover:text-[#343639] cursor-pointer"><Link to={"/"}>Home</Link> </p>
 
          
@@ -40,6 +42,8 @@ const NavBar = () => {
             className="relative"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+
+
           >
             <p className="sora hover:text-[#133C8A] cursor-pointer flex items-center">
               Courses
@@ -49,9 +53,15 @@ const NavBar = () => {
             </p>
 
             {isCoursesOpen && (
+
               <div className="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md text-sm z-50">
+
                 <ul className="py-2">
-                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Product Design</li>
+                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">
+                    <Link to={"/productDesign"}>
+                    Product Design
+                    </Link>
+                    </li>
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Game Development</li>
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">FrontEnd</li>
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">BackEnd</li>
@@ -60,7 +70,12 @@ const NavBar = () => {
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">
                     <Link to={'/data-science'}>Data Science</Link>
                   </li>
-                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Software Development</li>
+                 <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">
+                 <Link to={'/softwareDev'}>Software Development</Link>
+
+                 </li>
+                 
+               
                 </ul>
               </div>
             )}
@@ -81,7 +96,6 @@ const NavBar = () => {
 
       <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
 
-      
       <div className="mt-20"></div>
     </>
   );
