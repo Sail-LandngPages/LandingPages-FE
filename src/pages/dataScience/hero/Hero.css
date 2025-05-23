@@ -3,8 +3,12 @@
     background-size: cover;
     height: calc(100vh - 57px);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-title{
@@ -23,9 +27,15 @@
     color: white;
     font-family: Sora;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 19px;
     margin-bottom: 90px;
+    max-width: 620px;
+    text-align: left;
 }
+/* .hero-button{
+    display: flex;
+    justify-content: left;
+} */
 .join-now{
     background-color: #5BBCB4;
     color: #fff;
@@ -34,4 +44,68 @@
     border-radius: 20px;
     font-family: Sora;
     font-weight: 600;
+}
+
+
+
+@media (max-width: 838px){
+.hero-container{
+    background: url('/dataScienceHeroBg.png');
+    background-size: cover;
+    height: calc(918px + 57px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-text{
+    text-align: center;
+}
+.hero-paragraph{
+    color: white;
+    font-family: Sora;
+    font-weight: 200;
+    font-size: 19px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+}
+
+@media (max-width:428px){
+    .hero-container{
+    background: url('/dataScienceHeroBg.png');
+    background-size: contain;
+    height: calc(900px - 57px);
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+    .hero-title{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    margin-top:-60px;
+
+    span{
+        color: #5BBCB4;
+    }
+}
+.hero-paragraph{
+    color: white;
+    font-family: Sora;
+    font-weight: 200;
+    font-size: 13px;
+    margin-bottom: 60px;
+    text-align: center;
+    padding: 0 60px;
+}
+.hero-image{
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+
+}
+.hero-image img{
+    width: 85%;
+}
 }

@@ -31,3 +31,35 @@
     font-family: Sora;
     color: #627A95;
 }
+
+
+@media (max-width:838px){
+ .joinCard{
+    width: 500px;
+    height:100px;
+    border: transparent;
+    border-radius: 10px;
+}
+}
+
+
+
+@media (max-width:428px){
+ .joinCard{
+    width: 400px;
+    height:100px;
+    border: transparent;
+    border-radius: 10px;
+}
+.joinCard-title{
+    font-size: 20px;
+    font-family: Sora;
+    font-weight: bold;
+}
+.joinCard-paragraph{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Sora;
+    color: #627A95;
+}
+}
