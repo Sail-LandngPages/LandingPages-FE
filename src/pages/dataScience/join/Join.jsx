@@ -13,14 +13,14 @@ const Join = () => {
     <div className='join-container'>
         <div className="join-content">
             <h1 className="join-title">Why You Should Join?</h1>
-            <p className="join-paragraph">Unlock the power of data to solve real-world problems <br />
+            <p className="join-paragraph">Unlock the power of data to solve real-world problems 
             and launch a future-proof career.</p>
         </div>
         <div className="join-cards">
             <JoinCard 
             image={image1}
             title = 'Learn by doing'
-            description = 'Work on hands-on projects with real data sets Work on hands-on projects with real data sets'/>
+            description = 'Work on hands-on projects with real data sets '/>
             <JoinCard 
             image={image2}
             title = 'Zero Experience? No Problem!'

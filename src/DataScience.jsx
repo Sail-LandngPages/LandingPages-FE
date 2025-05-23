@@ -3,7 +3,9 @@ import React from 'react'
 import Hero from './pages/dataScience/hero/Hero'
 import Join from './pages/dataScience/join/Join'
 import Learn from './pages/dataScience/learn/Learn'
-// import WhoThisFor from './pages/dataScience/whoThisFor/WhoThisFor'
+import WhoThisFor from './pages/dataScience/whoThisFor/WhoThisFor'
+import Apply from './pages/dataScience/apply/Apply'
+
 
 const DataScience = () => {
   return (
@@ -12,7 +14,8 @@ const DataScience = () => {
     <Hero/>
     <Join/>
     <Learn/>
-    {/* <WhoThisFor/> */}
+    <WhoThisFor/>
+    <Apply/>
     </>
   )
 }
