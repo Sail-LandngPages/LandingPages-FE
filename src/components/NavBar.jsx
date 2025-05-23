@@ -1,33 +1,97 @@
-import React from 'react'
+import React, { useState, useRef } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
-import sail_Logo from "../assets/images/svg/sail_Logo.svg"
+import { RiArrowDropDownLine } from "react-icons/ri";
+
+import sail_Logo from "../assets/images/svg/sail_Logo.svg";
+import Sidebar from './SideBar'; 
 
 const NavBar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isCoursesOpen, setIsCoursesOpen] = useState(false);
+
+  const coursesRef = useRef(null);
+  const dropdownRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    setIsCoursesOpen(true);
+  };
+
+  const handleMouseLeave = (e) => {
+    if (
+      !coursesRef.current.contains(e.relatedTarget) &&
+      !dropdownRef.current.contains(e.relatedTarget)
+    ) {
+      setIsCoursesOpen(false);
+    }
+  };
+
   return (
-    <div className=' flex justify-around items-center bg-white pt-2.5 pb-2.5'>
-        <div className="logo-container ">
-            <img src={sail_Logo} alt="Company Logo" />
-
+    <>
+      <div className="flex justify-between items-center px-4 py-2 bg-white/50 backdrop-blur-md h-20 sm:px-6 md:px-10 w-full fixed top-0 left-0 z-40">
+        <div className="logo-container flex-shrink-0">
+          <img src={sail_Logo} alt="Company Logo" className="h-8 sm:h-10" />
         </div>
 
-        <div className=''>
-            <RxHamburgerMenu/>
+        <div
+          className="sm:hidden text-2xl text-[#627A95] cursor-pointer"
+          onClick={() => setIsSidebarOpen(true)}
+        >
+          <RxHamburgerMenu />
         </div>
 
+        <div className="hidden sm:flex gap-6 text-[#627A95] text-sm">
+          <p className="sora hover:text-[#343639] cursor-pointer">Home</p>
 
-        <div className="links flex gap-8 text-[#627A95]">
-           <p className='sora text-sm hover:text-[#343639] hover:'>Home</p>
-           <p className='sora text-sm hover:text-[#133C8A]'>Courses</p>
-           <p className='sora text-sm hover:text-[#133C8A]'>Testimonials</p>
-           <p className='sora text-sm hover:text-[#133C8A]'>FAQs</p>
+          <div
+            className="relative"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            ref={coursesRef}
+          >
+            <p className="sora hover:text-[#133C8A] cursor-pointer flex items-center">
+              Courses
+              <span className="text-[18px]">
+                <RiArrowDropDownLine />
+              </span>
+            </p>
+
+            {isCoursesOpen && (
+              <div
+                className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md text-sm"
+                ref={dropdownRef}
+              >
+                <ul className="py-2">
+                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Product Design</li>
+                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Game Development</li>
+                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">FrontEnd</li>
+                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">BackEnd</li>
+                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Generative AI</li>
+                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">BlockChain Development</li>
+                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Data Science</li>
+                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Software Development</li>
+                </ul>
+              </div>
+            )}
+          </div>
+
+          <p className="sora hover:text-[#133C8A] cursor-pointer">Testimonials</p>
+          <p className="sora hover:text-[#133C8A] cursor-pointer">FAQs</p>
         </div>
 
-
-        <div className=''>
-            <input type="" placeholder='Search' className='w-42 h-10 pl-4 text-sm border-[1px] mr-2 border-[#627A95] rounded-[8px]' />
+        <div className="hidden sm:block">
+          <input
+            type="text"
+            placeholder="Search"
+            className="w-40 h-9 pl-3 text-sm border border-[#627A95] rounded-md"
+          />
         </div>
-    </div>
-  )
-}
+      </div>
 
-export default NavBar
+      <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
+
+      <div className="mt-20"></div>
+    </>
+  );
+};
+
+export default NavBar;

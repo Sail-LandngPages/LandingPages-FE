@@ -1,4 +1,5 @@
 import React from 'react'
+import man from '../assets/images/man.png'
 
 const ProductHero = () => {
   return (
@@ -88,7 +89,7 @@ const ProductHero = () => {
                 </svg>
               </div>
               <image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Frame%2014492-U9aMDMMJpWjzNRzC39lVZO5FJwP5bc.png"
+                src={man}
                 alt="Designer working with color swatches and design materials"
                 width={600}
                 height={600}
