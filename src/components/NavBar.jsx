@@ -1,28 +1,22 @@
 import React, { useState, useRef } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiArrowDropDownLine } from "react-icons/ri";
-
+import { Link } from 'react-router-dom';
 import sail_Logo from "../assets/images/svg/sail_Logo.svg";
-import Sidebar from './SideBar'; 
+import Sidebar from './SideBar';
+
 
 const NavBar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
 
-  const coursesRef = useRef(null);
-  const dropdownRef = useRef(null);
-
   const handleMouseEnter = () => {
     setIsCoursesOpen(true);
   };
 
-  const handleMouseLeave = (e) => {
-    if (
-      !coursesRef.current.contains(e.relatedTarget) &&
-      !dropdownRef.current.contains(e.relatedTarget)
-    ) {
-      setIsCoursesOpen(false);
-    }
+  const handleMouseLeave = () => {
+    setIsCoursesOpen(false);
+
   };
 
   return (
@@ -40,13 +34,16 @@ const NavBar = () => {
         </div>
 
         <div className="hidden sm:flex gap-6 text-[#627A95] text-sm">
-          <p className="sora hover:text-[#343639] cursor-pointer">Home</p>
 
+          <p className="sora hover:text-[#343639] cursor-pointer"><Link to={"/"}>Home</Link> </p>
+
+         
           <div
             className="relative"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            ref={coursesRef}
+
+
           >
             <p className="sora hover:text-[#133C8A] cursor-pointer flex items-center">
               Courses
@@ -56,10 +53,9 @@ const NavBar = () => {
             </p>
 
             {isCoursesOpen && (
-              <div
-                className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md text-sm"
-                ref={dropdownRef}
-              >
+
+              <div className="absolute left-0 top-full w-48 bg-white shadow-lg rounded-md text-sm z-50">
+
                 <ul className="py-2">
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Product Design</li>
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Game Development</li>
@@ -67,7 +63,9 @@ const NavBar = () => {
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">BackEnd</li>
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Generative AI</li>
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">BlockChain Development</li>
-                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Data Science</li>
+                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">
+                    <Link to={'/data-science'}>Data Science</Link>
+
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Software Development</li>
                 </ul>
               </div>
