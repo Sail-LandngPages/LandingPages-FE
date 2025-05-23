@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { Link } from 'react-router-dom';
+import  {Link}  from 'react-router-dom';
 import sail_Logo from "../assets/images/svg/sail_Logo.svg";
 import Sidebar from './SideBar';
 
@@ -69,8 +69,13 @@ const NavBar = () => {
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">BlockChain Development</li>
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">
                     <Link to={'/data-science'}>Data Science</Link>
+                  </li>
+                 <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">
+                 <Link to={'/softwareDev'}>Software Development</Link>
 
-                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Software Development</li>
+                 </li>
+                 
+               
                 </ul>
               </div>
             )}
