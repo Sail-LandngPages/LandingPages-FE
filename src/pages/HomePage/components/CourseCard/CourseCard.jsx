@@ -26,9 +26,19 @@ const CourseCard = ({ course }) => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="w-[268px] bg-white rounded-[14px] overflow-hidden"
+      whileHover={{
+        scale: 1.03,
+        boxShadow: "0px 25px 70px rgba(38, 45, 118, 0.15)",
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 300,
+        damping: 20,
+      }}
+      className="w-[268px] bg-white rounded-[14px] overflow-hidden will-change-transform"
       style={{
         boxShadow: "0px 10px 60px rgba(38, 45, 118, 0.08)",
+        transform: "translateZ(0)",
       }}
     >
       {/* Course Image */}
