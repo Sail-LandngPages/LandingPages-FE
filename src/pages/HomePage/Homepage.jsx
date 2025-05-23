@@ -1,3 +1,4 @@
+
 import Hero from "./components/Hero";
 import PopularCourses from "./components/PopularCourses";
 import Testimonial from "./components/Testimonial";
@@ -11,6 +12,7 @@ const Homepage = () => {
       <Testimonial />
       <Newsletter />
     </main>
+
   );
 };
 
