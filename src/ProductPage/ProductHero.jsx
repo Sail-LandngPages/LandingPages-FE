@@ -26,7 +26,7 @@ const ProductHero = () => {
           <div className="order-2 lg:order-1">
             {/* Yellow pill button */}
             <div className="mb-8">
-              <button className="bg-yellow-400 text-white px-4 py-2 rounded-full flex items-center">
+              <button className="bg-[#FBB404] text-white px-4 py-2 rounded-full flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5 mr-2"
@@ -50,17 +50,17 @@ const ProductHero = () => {
 
             {/* Description */}
             <p className="text-gray-600 mb-10 leading-relaxed">
-              The SAIL Product Design Learning Track is your gateway to mastering UI/UX design, user research, and
-              design thinking to create impactful digital experiences. Whether you&apos;re a beginner or looking to
-              sharpen your skills, this program equips you with hands- on training and industry mentorship to help you
-              succeed in the growing field of product design.
+            The SAIL Product Design Learning Track is your gateway to mastering UI/UX design, 
+            user research, and design thinking to create impactful digital experiences. Whether you’re a 
+            beginner or looking to sharpen your skills, this program equips you with hands-on
+             training and industry mentorship to help you succeed in the growing field of product design.
             </p>
 
             {/* Buttons */}
             <div className="flex flex-wrap gap-4">
               <a
                 href="#apply"
-                className="bg-blue-900 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-800 transition-colors"
+                className="bg-[#133C8A] text-white px-8 py-3 rounded-md font-medium hover:bg-blue-800 transition-colors"
               >
                 Apply now
               </a>
@@ -76,7 +76,6 @@ const ProductHero = () => {
           <div className="order-1 lg:order-2 relative">
             {/* Image container with border */}
             <div className="relative rounded-3xl overflow-hidden border border-gray-200">
-              <div className="absolute top-2 right-4 text-xs font-bold text-gray-500">LOGO</div>
               <div className="absolute top-4 right-8">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -88,13 +87,14 @@ const ProductHero = () => {
                   />
                 </svg>
               </div>
-              <image
+              {/* <image
                 src={man}
                 alt="Designer working with color swatches and design materials"
                 width={600}
                 height={600}
                 className="w-full h-auto"
-              />
+              /> */}
+              <img src={man} alt="" width={600} height={600}/>
             </div>
 
             {/* Decorative sparkle */}
