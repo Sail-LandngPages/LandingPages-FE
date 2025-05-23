@@ -29,7 +29,53 @@
 .join-cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 120px;
     margin-top: 30px;
     
+}
+
+
+
+@media (max-width: 838px){
+    .join-container{
+    padding-top: 100px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    background: url('/joinBG.png');
+    background-size: cover;
+    height: 200vh;
+}
+.join-title{
+    margin-bottom: 20px;
+    margin-top: -60px;
+}
+.join-paragraph{
+    padding: 0 140px;
+}
+.join-cards{
+    justify-content: center;
+}
+}
+
+@media (max-width:428px){
+    .join-title{
+    color: #133C8A;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Raleway;
+    margin-bottom: 5px;
+    margin-top: -50px;
+}
+.join-paragraph{
+    letter-spacing: 1px;
+    color: #627A95;
+    font-family: Sora;
+    padding: 0 30px;
+    font-size: 14px;
+    font-style: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
 }
