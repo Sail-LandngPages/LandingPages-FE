@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 2rem;
+  -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+}
+
+/* Optimize scrolling performance */
+body {
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .sora {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
