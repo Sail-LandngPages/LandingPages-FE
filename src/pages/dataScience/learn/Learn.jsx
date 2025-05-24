@@ -23,7 +23,7 @@ const Learn = () => {
             <LearnCard title = 'Python for Data Science'
                         description = 'Write powerful, readable code to analyze and automate your data workflow'
                         image = {learnImg2}/>
-            <LearnCard title = 'Statistics & MAchine Learning'
+            <LearnCard title = 'Statistics & Machine Learning'
                         description = 'Learn the math and models behind predictions, trends, and smart systems'
                         image = {learnImg3}/>
             <LearnCard title = 'Intro to Artificial Intelligence'

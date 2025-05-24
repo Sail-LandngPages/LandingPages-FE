@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     background: url('/joinBG.png');
-    background-size: contain;
-    height: 100vh;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: auto;
     padding-top: 20px;
 }
 .join-content{
@@ -26,14 +27,15 @@
     font-style: 24px;
     font-weight: 400;
     margin-bottom: 20px;
-    padding: 0 500px;
+    padding: 0 400px;
 }
 .join-cards{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 170px;
+    flex-wrap: wrap;
+    padding: 0 140px;
     margin-top: 30px; 
+    /* gap:20px; */
 }
 
 

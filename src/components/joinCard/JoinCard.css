@@ -4,12 +4,12 @@
 .joinCard{
     display: flex;
     align-items: center;
-    width: 550px;
+    width: 500px;
     height:100px;
     box-shadow: 1px 1px 3px grey;
     background-color: white;
     padding: 15px;
-    border-radius: 25px;
+    border-radius: 10px;
     border: transparent;
     margin-bottom: 50px;
 }

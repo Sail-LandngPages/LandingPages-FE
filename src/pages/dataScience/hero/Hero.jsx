@@ -17,14 +17,8 @@ const Hero = () => {
               <button className="join-now">Join Now</button>
             </div>
         </div>
-        <motion.div 
-        className="hero-image" 
-      animate={{ y: 100 }}
-    transition={{ type: "spring", stiffness: 200 }}
-    >
             <img src={hero_image} alt="" />
-        </motion.div>
-    </div>
+        </div>
   )
 }
 
