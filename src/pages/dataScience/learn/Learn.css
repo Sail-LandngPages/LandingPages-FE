@@ -41,12 +41,13 @@
 .learn-container{
     display: flex;
     flex-direction: column;
-    height: 170vh;
+    height: fit-content;
     padding: 0px 25px;
 }
 .learn-title{
     font-size: 36px;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 .learn-paragraph{
     padding: 0 45px;
