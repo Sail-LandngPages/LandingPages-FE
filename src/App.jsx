@@ -13,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <Homepage/>}/>
         <Route path="/data-science" element = {<DataScience/>}/>
+        
       </Routes>
       <Footer/>
     </Router>
