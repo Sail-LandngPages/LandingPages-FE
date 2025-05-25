@@ -1,6 +1,5 @@
 import React from 'react'
 import './Join.css'
-// import JoinCard from '../../../component/joinCard/JoinCard'
 import image1 from '/joincardImg1.png'
 import image2 from '/joincardImg2.png'
 import image3 from '/joincardImg3.png'
