@@ -31,7 +31,7 @@ const OptionBox = ({
         </div>
       )}
 
-      {title && <h5 className="text-lg text-[#12245f] font-semibold mb-2">{title}</h5>}
+      {title && <h5 className="text-lg text-[#1d3793] font-semibold mb-2">{title}</h5>}
       {desc && <p className="text-sm w-[200px] text-gray-600 ">{desc}</p>}
     </div>
   );

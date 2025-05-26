@@ -25,7 +25,7 @@ const Sectiontwo = () => {
           
 
 
-          <div className="boxes justify-center flex gap-15 mt-10">
+          <div className="boxes justify-center flex gap-15 mt-10 ">
             <OptionBox
                   Icon={CiLaptop}
                   iconColor="#f6784c"
