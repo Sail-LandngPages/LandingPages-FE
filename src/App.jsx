@@ -6,6 +6,7 @@ import DataScience from "./Datascience"
 import {BrowserRouter , Router, Routes, Route } from 'react-router-dom'
 import Header from "./static/Header"
 import Footer from "./static/Footer"
+import GameDev from "./pages/GameDev/GameDev"
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/data-science" element = {<DataScience/>}/>
         <Route path= "/softwareDev" element={<Softwaredev/>}/>
         <Route path= "/productDesign" element={ <ProductDesign/>}/>
+        <Route path="/gameDev" element={<GameDev/>}/>
         
       </Routes>
       <Footer/>
