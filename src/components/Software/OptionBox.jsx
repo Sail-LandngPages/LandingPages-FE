@@ -1,8 +1,8 @@
 import React from 'react';
 
 const OptionBox = ({
-  height = '280px',
-  width = '260px',
+  height = '250px',
+  width = '270px',
   Icon,                      
   iconColor = '#333',        
   rotatedBgColor = '#f0f0f0',

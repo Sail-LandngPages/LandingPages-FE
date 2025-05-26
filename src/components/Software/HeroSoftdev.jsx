@@ -71,16 +71,16 @@ const HeroSoftdev = () => {
              
           </div>
 
-          <img src={greenhero} className="absolute top-[610px] left-[250px] md-top-[620px] md-left-[370px] w-[160px] lg:top-30 lg:left-[920px] lg:w-[160px" alt="" />
+          <img src={greenhero} className="absolute top-[710px] left-[355px] md-top-[620px] md-left-[370px] w-[160px] lg:top-[200px] lg:left-[920px] lg:w-[160px" alt="" />
             <img 
               src={bluehero} 
-              className="absolute top-[700px] left-[10px] md-top-[740px] md-left-[80px] w-[160px] lg:top-58 lg:left-[630px] lg:w-[160px]" 
+              className="absolute top-[799px] left-[70px] md-top-[740px] md-left-[80px] w-[160px] lg:top-[302px] lg:left-[640px] lg:w-[160px]" 
               alt="" 
             />
 
           <img 
             src={whitehero} 
-            className="absolute top-[820px] left-[300px] md-top-[900px] md-left-[440px] w-[160px] lg:top-90 lg:left-[960px] lg:w-[160px]" 
+            className="absolute top-[950px] left-[390px] md-top-[900px] md-left-[440px] w-[160px] lg:top-[440px] lg:left-[955px] lg:w-[160px]" 
             alt="" 
           />
      
