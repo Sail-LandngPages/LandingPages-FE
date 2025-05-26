@@ -1,29 +1,36 @@
 import React from 'react'
-import { CheckCircle } from "lucide-react";
+import { 
+  CheckCircle2, Users, BriefcaseBusiness, FileText, Clock, Award 
+} from 'lucide-react';
 import pix from "../assets/images/pix.png"
 import Stats from '../stats/Stats';
 const benefits = [
-    {
-      title: "Practical Learning",
-      description: "Work on real-world design projects.",
-    },
-    {
-      title: "Industry Experts",
-      description: "Learn from top designers & UX professionals.",
-    },
-    {
-      title: "Job Readiness",
-      description: "Build a portfolio that stands out in the industry.",
-    },
-    {
-      title: "Flexible Learning Format",
-      description: "Choose between online, hybrid, or in-person learning.",
-    },
-    {
-      title: "100% Scholarship Available",
-      description: "Limited slots for fully-funded training!",
-    },
-  ];
+  {
+    title: "Practical Learning",
+    description: "Work on real-world design projects.",
+    icon: <BriefcaseBusiness className="w-5 h-5" />
+  },
+  {
+    title: "Industry Experts",
+    description: "Learn from top designers & UX professionals.",
+    icon: <Users className="w-5 h-5" />
+  },
+  {
+    title: "Job Readiness",
+    description: "Build a portfolio that stands out in the industry.",
+    icon: <FileText className="w-5 h-5" />
+  },
+  {
+    title: "Flexible Learning Format",
+    description: "Choose between online, hybrid, or in-person learning.",
+    icon: <Clock className="w-5 h-5" />
+  },
+  {
+    title: "100% Scholarship Available",
+    description: "Limited slots for fully-funded training!",
+    icon: <Award className="w-5 h-5" />
+  },
+];
   
   const stats = [
     { number: "2800+ ", label: "Graduates" } ,
@@ -35,7 +42,7 @@ const benefits = [
 const Program = () => {
   return (
     <div>
-         <section className="max-w-7xl mx-auto px-4 py-12 bg-white">
+         <section className="max-w-7xl mx-auto px-4 py-12 bg-white ml-10">
       {/* Header */}
       <header className="mb-8 space-y-4">
          
@@ -74,7 +81,7 @@ const Program = () => {
             alt="Students working on design sketches and wireframes"
             className="rounded-lg w-full object-cover"
           /> */}
-          <img src={pix} alt="" className='rounded-lg w-120 object-cover ' />
+          <img src={pix} alt="" className='rounded-lg w-100 object-cover ' />
           {/* Decorative dots */}
           {/* <div className="hidden md:block absolute -bottom-3 right-3  p-2 rounded-lg ">
             {[...Array(2)].map((_, row) => (
@@ -88,19 +95,19 @@ const Program = () => {
         </figure>
 
         {/* Benefits list */}
-        <ul className="space-y-12">
-          {benefits.map(({ title, description }) => (
-            <li key={title} className="flex gap-4">
-              <div className="w-10 h-10 bg-[#133C8A] rounded-lg flex items-center justify-center text-white flex-shrink-0">
-                <CheckCircle className="w-5 h-5" />
-              </div>
-              <div>
-                <h3 className="font-bold text-[#000000]">{title}</h3>
-                <p className="text-sm text-gray-600">{description}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+       <ul className="space-y-12">
+  {benefits.map(({ title, description, icon }) => (
+    <li key={title} className="flex gap-4">
+      <div className="w-10 h-10 bg-[#133C8A] rounded-lg flex items-center justify-center text-white flex-shrink-0">
+        {icon}
+      </div>
+      <div>
+        <h3 className="font-bold text-[#000000]">{title}</h3>
+        <p className="text-sm text-gray-600">{description}</p>
+      </div>
+    </li>
+  ))}
+</ul>
       </div>
 
       {/* Stats */}
