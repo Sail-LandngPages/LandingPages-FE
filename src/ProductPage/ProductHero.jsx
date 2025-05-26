@@ -49,7 +49,7 @@ const ProductHero = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-gray-600 mb-10 leading-relaxed">
+            <p className="text-gray-600 mb-10 leading-relaxed justify-center text-center">
             The SAIL Product Design Learning Track is your gateway to mastering UI/UX design, 
             user research, and design thinking to create impactful digital experiences. Whether you’re a 
             beginner or looking to sharpen your skills, this program equips you with hands-on
