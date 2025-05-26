@@ -62,7 +62,10 @@ const NavBar = () => {
                     Product Design
                     </Link>
                     </li>
-                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Game Development</li>
+                  <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">
+                    <Link to={"/gameDev"}> Game Development 
+                    </Link>
+                  </li> 
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">FrontEnd</li>
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">BackEnd</li>
                   <li className="px-4 py-2 hover:bg-[#f0f0f0] cursor-pointer">Generative AI</li>
