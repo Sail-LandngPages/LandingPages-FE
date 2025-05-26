@@ -119,7 +119,7 @@ const Learn = () => {
     </section>
             <div className="flex h-125 bg-[#ffff]">
                 {/* Custom scrollbar */}
-                <div ref={scrollbarRef} className="w-4 h-full bg-gray-200 relative flex-shrink-0">
+                <div ref={scrollbarRef} className="w-4 h-full bg-gray-200 relative flex-shrink-0 rounded-full">
                     <div
                         ref={thumbRef}
                         className="w-3 bg-[#133C8A] rounded-full absolute left-0.5 cursor-pointer hover:bg-blue-700 transition-colors"
@@ -143,11 +143,7 @@ const Learn = () => {
 
       {/* Image */}
       <div className="flex-1">
-        {/* <img
-          src="/path-to-your-image.png"
-          alt="UI/UX Design Fundamentals"
-          className="w-full rounded-lg shadow-lg"
-        /> */}
+        
         <img src={frame} alt="" className='w-full h-120 ' />
       </div>
                     
@@ -168,11 +164,7 @@ const Learn = () => {
 
       {/* Image */}
       <div className="flex-1">
-        {/* <img
-          src="/path-to-your-image.png"
-          alt="UI/UX Design Fundamentals"
-          className="w-full rounded-lg shadow-lg"
-        /> */}
+       
         <img src={frame2} alt="" className='w-full h-120 ' />
       </div>
                     
@@ -193,11 +185,7 @@ const Learn = () => {
 
       {/* Image */}
       <div className="flex-1">
-        {/* <img
-          src="/path-to-your-image.png"
-          alt="UI/UX Design Fundamentals"
-          className="w-full rounded-lg shadow-lg"
-        /> */}
+       
         <img src={frame3} alt="" className='w-full h-120 ' />
       </div>
                     
@@ -218,11 +206,7 @@ const Learn = () => {
 
       {/* Image */}
       <div className="flex-1">
-        {/* <img
-          src="/path-to-your-image.png"
-          alt="UI/UX Design Fundamentals"
-          className="w-full rounded-lg shadow-lg"
-        /> */}
+       
         <img src={frame4} alt="" className='w-full h-120 ' />
       </div>
                     
@@ -243,11 +227,7 @@ const Learn = () => {
 
       {/* Image */}
       <div className="flex-1">
-        {/* <img
-          src="/path-to-your-image.png"
-          alt="UI/UX Design Fundamentals"
-          className="w-full rounded-lg shadow-lg"
-        /> */}
+       
         <img src={frame5} alt="" className='w-full h-120 ' />
       </div>
                     
@@ -268,11 +248,7 @@ const Learn = () => {
 
       {/* Image */}
       <div className="flex-1">
-        {/* <img
-          src="/path-to-your-image.png"
-          alt="UI/UX Design Fundamentals"
-          className="w-full rounded-lg shadow-lg"
-        /> */}
+       
         <img src={frame6} alt="" className='w-full h-120 ' />
       </div>
                     

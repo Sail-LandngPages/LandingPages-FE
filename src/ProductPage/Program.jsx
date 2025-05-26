@@ -21,7 +21,7 @@ const benefits = [
     },
     {
       title: "100% Scholarship Available",
-      description: "Financial support available for qualified students",
+      description: "Limited slots for fully-funded training!",
     },
   ];
   

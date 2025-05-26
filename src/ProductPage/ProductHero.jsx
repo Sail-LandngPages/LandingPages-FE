@@ -4,9 +4,9 @@ import man from '../assets/images/man.png'
 const ProductHero = () => {
   return (
     <div>
-        <div className="min-h-screen bg-white p-4 md:p-8 lg:p-16 relative overflow-hidden">
+        <div className="min-h-screen bg-[#FAFAFA] p-4 md:p-8 lg:p-16 relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-[15%] right-[15%] w-16 h-16">
+      <div className="absolute top-[6%] right-[43.4%] w-16 h-16">
         <svg viewBox="0 0 100 100" className="w-full h-full">
           <path
             d="M50 0 L65 35 L100 50 L65 65 L50 100 L35 65 L0 50 L35 35 Z"
@@ -16,9 +16,9 @@ const ProductHero = () => {
           />
         </svg>
       </div>
-      <div className="absolute bottom-[20%] right-[30%] w-32 h-32 rounded-full bg-gray-300 opacity-70" />
-      <div className="absolute bottom-[10%] right-[15%] w-48 h-48 rounded-full bg-pink-200 opacity-70" />
-      <div className="absolute top-[60%] right-[25%] w-24 h-24 rounded-full bg-pink-300 opacity-50" />
+      <div className="absolute bottom-[1%] right-[50%] w-25 h-25 rounded-full bg-gray-300 opacity-70 " />
+      <div className="absolute bottom-[1%] right-[10%] w-50 h-25 rounded-full bg-pink-200 opacity-70" />
+      <div className="absolute bottom-[1%] right-[25%] w-80 h-25 rounded-full bg-pink-300 opacity-50" />
       <div className="absolute top-[75%] right-[20%] w-16 h-16 rounded-full bg-gray-200 opacity-60" />
 
       <div className="max-w-7xl mx-auto">
@@ -75,7 +75,7 @@ const ProductHero = () => {
 
           <div className="order-1 lg:order-2 relative">
             {/* Image container with border */}
-            <div className="relative rounded-3xl overflow-hidden border border-gray-200">
+            <div className="relative rounded-2xl overflow-hidden border-l border-r border-b  border-black w-112 ml-10">
               <div className="absolute top-4 right-8">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -87,14 +87,8 @@ const ProductHero = () => {
                   />
                 </svg>
               </div>
-              {/* <image
-                src={man}
-                alt="Designer working with color swatches and design materials"
-                width={600}
-                height={600}
-                className="w-full h-auto"
-              /> */}
-              <img src={man} alt="" width={600} height={600}/>
+             
+              <img src={man} alt="" width={350} height={350} className='ml-24 mt-12'/>
             </div>
 
             {/* Decorative sparkle */}
