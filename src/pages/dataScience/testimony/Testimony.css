@@ -378,7 +378,7 @@
    font-family: 'Sora', sans-serif;
    color: #2F327D;
    text-align: center;
-   font-weight: 700; /* font-semibold */
+   font-weight: 600; /* font-semibold */
    line-height: 1.4; /* leading-6 */
    margin-bottom: 1.5rem; /* mb-6 */
    padding:0 50px;
