@@ -34,24 +34,27 @@ const Sectiontwo = () => {
                   desc="Build projects that showcase your skills and solve real-world problems.
                   our curriculum focuses on practical applications"
                   borderTopColor="#f6784c"
+                  showRotatedBg={true}
                   />
             <OptionBox
                   Icon={GoDeviceDesktop}
                   iconColor="#274bb4"
-                  rotatedBgColor="#f6784c1A"
+                  rotatedBgColor="rgba(39, 75, 180, 0.1)"
                   title="Expert-Led Training"
                   desc="Learn from top software engineers & industry experts who
                   bring real industry knowledge to your learning journey."
                   borderTopColor="#274bb4"
+                  showRotatedBg={true}
                   />
             <OptionBox
                   Icon={AiOutlineGift}
                   iconColor="#20d5b9"
-                  rotatedBgColor="#f6784c1A"
+                  rotatedBgColor="rgba(32, 213, 185, 0.1)"
                   title="Career Support"
                   desc="Get resume reviews, mock interviews, and job placement guidance 
                   to ensure you're prepared for the job market."
                   borderTopColor="#20d5b9"
+                  showRotatedBg={true}
                   />
           </div>
 
@@ -59,11 +62,12 @@ const Sectiontwo = () => {
             <OptionBox
                   Icon={CiCalendar}
                   iconColor="#6747ce"
-                  rotatedBgColor="#f6784c1A"
+                  rotatedBgColor="rgba(103, 71, 206, 0.1)"
                   title="Flexible Learning"
                   desc="BChoose between online, hybrid, or in-person learning formats that fit your schedule
                   and learning style"
                   borderTopColor="#6747ce"
+                  showRotatedBg={true}
                   />
             <OptionBox
                   Icon={LiaLightbulbSolid}
@@ -73,15 +77,17 @@ const Sectiontwo = () => {
                   desc="Limited slots available for fully-funded training!
                   Don't miss this oppourtunity to learn without financial burden."
                   borderTopColor="#f6784c"
+                  showRotatedBg={true}
                   />
             <OptionBox
                   Icon={BsPerson}
                   iconColor="#274bb4"
-                  rotatedBgColor="#f6784c1A"
+                  rotatedBgColor="rgba(39, 75, 180, 0.1)"
                   title="Community Support"
                   desc="Join a vibrant commuinty of learners, mentors,
                   and industry professionals who support your growth journey."
                   borderTopColor="#274bb4"
+                  showRotatedBg={true}
                   />
           </div>
           
