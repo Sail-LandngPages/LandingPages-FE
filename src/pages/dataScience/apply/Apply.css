@@ -26,6 +26,13 @@
     font-weight: 700;
     border-radius: 30px;
     border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.apply-container button:hover{
+    background-color: #2963ce;
+    padding: 19px 35px;
+    border-radius: 35px;
 }
 
 @media (max-width:838px){

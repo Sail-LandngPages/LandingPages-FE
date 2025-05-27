@@ -60,7 +60,7 @@
     flex-wrap: wrap;
     gap:10px;
     padding: 0 50px;
-    
+    margin-bottom: -230px;
 }
 }
 
@@ -81,4 +81,12 @@
     font-size: 14px;
     margin-bottom: 10px;
 }
+/* .learn-cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:40px;
+    padding: 0 50px;
+ 
+} */
 }

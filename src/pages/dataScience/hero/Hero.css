@@ -45,7 +45,14 @@
     border-radius: 20px;
     font-family: Sora;
     font-weight: 600;
-    
+    cursor: pointer;
+    border: none;
+    transition: .5s;
+}
+.join-now:hover{
+    background-color: #1eb9ac;
+    padding: 17px 47px;
+    border-radius: 30px;
 }
 
 
