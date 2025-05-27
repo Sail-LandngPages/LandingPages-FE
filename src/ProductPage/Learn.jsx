@@ -117,7 +117,7 @@ const Learn = () => {
         Practical skills and key concepts essential for success, equipping you to confidently apply your knowledge in real-world situations.
       </p>
     </section>
-            <div className="flex h-125 bg-[#ffff]">
+            <div className="flex h-125 bg-[#ffff] ml-15">
                 {/* Custom scrollbar */}
                 <div ref={scrollbarRef} className="w-4 h-full bg-gray-200 relative flex-shrink-0 rounded-full">
                     <div
