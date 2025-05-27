@@ -9,9 +9,19 @@ const Hero = () => {
       className='hero-container'
       >
         <div className="hero-text">
-            <h1 className="hero-title"><span>Data</span> is the new gold! <br /> it's time to dig</h1>
-            <p className="hero-paragraph">Are you ready to turn raw numbers into powerful insights? 
-            The SAIL Data Science learning Track is your ticket to mastering data, analytics and AI whie working on real-world projects that make  you job-ready</p>
+            <motion.h1 
+            className="hero-title"
+            initial={{opacity:0, scale: 0.1 }}
+            animate={{opacity:1, scale: 1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 , duration:3}}>
+              <span>Data</span> is the new gold! <br /> it's time to dig</motion.h1>
+            <motion.p 
+            className="hero-paragraph"
+              initial={{ x: -100,  }}
+              animate={{ x:0,x:100,x:0}}
+              transition={{ type: "spring", stiffness: 400, damping: 10 , duration:3}}>
+                Are you ready to turn raw numbers into powerful insights? 
+            The SAIL Data Science learning Track is your ticket to mastering data, analytics and AI whie working on real-world projects that make  you job-ready</motion.p>
             
             <div className="hero-button">
               <button className="join-now">Join Now</button>
