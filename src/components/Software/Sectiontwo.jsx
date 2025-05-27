@@ -13,10 +13,10 @@ const Sectiontwo = () => {
         
         <div className="container">
 
-          <div className='grid place-items-center'>
-            <p className=' bg-[#e4ebf9] text-center w-[240px] text-[#8d75fe] p-2 mt-5 rounded-full'>Why Choose Our Program</p>
-              <h3 className='text-[#1d3793] font-bold text-[40px]'>why Choose <span className='text-[#f6994c]'>SAIL</span> Program?</h3>
-              <p className='w-[600px] text-center text-[15px]'>The SAIL Software Development Learning Track is designed to equip aspiring developers 
+          <div className='grid md:place-items-center lg:place-items-center ml-12 lg:ml-0'>
+            <p className=' bg-[#e4ebf9]  md:text-center lg:text-center w-[190px]   md:w-[240px] text-[12px] sm:text-[15px]  lg:text-[15px]  lg:w-[240px] text-[#8d75fe] pl-6 py-2 md:p-2 lg:p-2 mt-5 ml-15 md:ml-0 lg:ml-0 rounded-full '>Why Choose Our Program</p>
+              <h3 className='text-[#1d3793] font-bold  text-[23px]  md:text-[40px] lg:text-[40px] '>why Choose <span className='text-[#f6994c]'>SAIL</span> Program?</h3>
+              <p className='w-[300px] md:w-[600px] lg:w-[600px] lg:text-center text-[15px] mt-4  md:mt-0 lg:mt-0'>The SAIL Software Development Learning Track is designed to equip aspiring developers 
                   with the skills, tools, and mentorship they need to break into the tech industry, weather
                   you're a complete beginner or looking to refine your skills, this program will help you
                   build real-world projects and become jon-ready.
@@ -25,7 +25,7 @@ const Sectiontwo = () => {
           
 
 
-          <div className="boxes justify-center flex gap-15 mt-10 ">
+          <div className="boxes px-10 lg:px-0 md:px-0  md:justify-center  lg:justify-center  flex flex-col md:flex-row lg:flex-row gap-6 md:gap-15 lg:gap-15 mt-10 ">
             <OptionBox
                   Icon={CiLaptop}
                   iconColor="#f6784c"
@@ -55,7 +55,7 @@ const Sectiontwo = () => {
                   />
           </div>
 
-          <div className="boxes justify-center flex gap-15 mt-10">
+          <div className="boxes px-10 lg:px-0 md:px-0  md:justify-center  lg:justify-center   flex flex-col md:flex-row lg:flex-row gap-6 md:gap-15 lg:gap-15 mb-10 mt-10">
             <OptionBox
                   Icon={CiCalendar}
                   iconColor="#6747ce"
