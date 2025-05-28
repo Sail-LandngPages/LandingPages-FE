@@ -85,15 +85,7 @@ const Program = () => {
           /> */}
           <img src={pix} alt="" className='rounded-lg w-100 object-cover ' />
           {/* Decorative dots */}
-          {/* <div className="hidden md:block absolute -bottom-3 right-3  p-2 rounded-lg ">
-            {[...Array(2)].map((_, row) => (
-              <div key={row} className="flex space-x-3 mt-1 first:mt-0">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="block w-2 h-2 bg-blue-600 rounded-full" />
-                ))}
-              </div>
-            ))}
-          </div> */}
+          
         </figure>
 
         {/* Benefits list */}
