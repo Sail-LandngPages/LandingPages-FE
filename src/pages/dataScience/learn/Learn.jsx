@@ -44,7 +44,7 @@ const Learn = () => {
             ref={paragraphRef}
             variants={animationState2}
             initial='hidden'
-            animate={isParaVisible ? 'visible':'hidden'}>Master the essential tools, techniques and mindset to turn raw <br /> data into powerful insights and career-ready projects</motion.p>
+            animate={isParaVisible ? 'visible':'hidden'}>Master the essential tools, techniques and mindset to turn raw  data into powerful insights and career-ready projects</motion.p>
         </div>
 
         <motion.div className="learn-cards"

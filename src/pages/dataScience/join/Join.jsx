@@ -49,6 +49,7 @@ const Join = () => {
             animate={isParaVisible ? 'visible':'hidden'}>Unlock the power of data to solve real-world problems 
             and launch a future-proof career.</motion.p>
         </div>
+        
         <motion.div className="join-cards"
          ref={box1Ref}
             variants={animationState3}
