@@ -20,7 +20,7 @@ const ApplyCard = ({
 }) => {
   return (
     <div
-        className={`flex flex-col gap-4 px-2 py-4 shadow-lg rounded-md ${className}`}
+        className={`flex flex-row gap-4 px-2 py-4 shadow-lg rounded-md ${className}`}
         style={{
             backgroundColor,
             borderTop: `6px solid ${borderTopColor}`,
