@@ -41,12 +41,12 @@ const benefits = [
 
 const Program = () => {
   return (
-    <div>
-         <section className="max-w-7xl mx-auto px-4 py-12 bg-white ml-10">
+    <div >
+         <section className="max-w-7xl mx-auto px-4 py-12 bg-[#ffff] ">
           <div className='h-22  overflow-hidden'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FAFAFA" fill-opacity="1" d="M0,256L120,213.3C240,171,480,85,720,53.3C960,21,1200,43,1320,53.3L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg></div>
           
       {/* Header */}
-      <header className="mb-8 space-y-4">
+      <header className="mb-8 space-y-4 lg:ml-10">
          
 
         <button className='bg-[#FBB404]'>
@@ -64,7 +64,7 @@ const Program = () => {
       </header>
 
       {/* Content */}
-      <div className="grid md:grid-cols-2 gap-10 items-start">
+      <div className="grid md:grid-cols-2 gap-10 items-start lg:ml-10">
         {/* Image */}
         <figure className="relative">
           {/* <img
@@ -102,7 +102,7 @@ const Program = () => {
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-3  mt-10 gap-0.5 ">
+      <div className="grid grid-cols-3  mt-10 gap-0.5 lg:ml-10 ">
         {/* {stats.map(({ number, label }) => (
           <div key={label}>
             <div className="text-2xl font-bold text-gray-900">{number}</div>
@@ -111,6 +111,7 @@ const Program = () => {
         ))} */}
         <Stats/>
       </div>
+      <div className='overflow-hidden -mt-50'> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FAFAFA" fill-opacity="1" d="M0,256L80,261.3C160,267,320,277,480,282.7C640,288,800,288,960,250.7C1120,213,1280,139,1360,101.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg></div>
     </section>
     </div>
   )
