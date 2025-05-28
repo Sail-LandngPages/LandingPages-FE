@@ -34,7 +34,7 @@ const Apply = () => {
         ref={paragraphRef}
             variants={animationState2}
             initial='hidden'
-            animate={isParaVisible ? 'visible':'hidden'}>Hit the <span>APPLY NOW</span> button and start your journey in <span>Data Science & AI today</span> <br />No more over thinking-just take the leap!</motion.p>
+            animate={isParaVisible ? 'visible':'hidden'}>Hit the <span>APPLY NOW</span> button and start your journey in <span>Data Science & AI today</span> No more over thinking-just take the leap!</motion.p>
 
         <motion.button 
         ref={box1Ref}
