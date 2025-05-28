@@ -13,7 +13,7 @@ import Faq from '../ProductPage/Faq'
 const ProductDesign = () => {
   return (
     <div>
-        <Header/>
+        
         <ProductHero/>
         <Program/>
         <Learn/>
@@ -22,7 +22,7 @@ const ProductDesign = () => {
         <Testimony/>
         <Community/>
         <Faq/>
-        <Footer/>
+      
     </div>
   )
 }

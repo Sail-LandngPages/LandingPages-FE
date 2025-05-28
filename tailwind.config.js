@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         sora: ["Sora", "sans-serif"],
         raleway: ["Raleway", "sans-serif"],
+        orbitron: ["Orbitron", "sans-serif"],
       },
       colors: {
         primary: "#133C8A",
@@ -13,6 +14,7 @@ export default {
       },
       boxShadow: {
         "custom-bottom": "0 35px 60px -15px rgba(0, 0, 0, 0.4)",
+        "bottom": "0px 4px 10px #D97706"
       },
     },
   },
