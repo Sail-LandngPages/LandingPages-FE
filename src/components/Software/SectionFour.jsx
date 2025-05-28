@@ -6,20 +6,21 @@ import { PiGraduationCapThin } from "react-icons/pi";
 import { LuLightbulb } from "react-icons/lu";
 import ApplyCard from './ApplyCard';
 import girl from '../../assets/softdev-asset/girl.png'
+import Card from './Card';
 
 
 const SectionFour = () => {
   return (
     <div className='ml-4 mt-8  '>
 
-        <div className="text text-center pt-8 ">
+        <div className="text  text-center pt-8 ">
             <h4 className='text-[#12245f] text-lg font-bold text-center mb-2'>Who Can <span className=' text-[#fbb404]'>Apply</span> ?</h4>
             <p className='text-gray-600 mb-6 w-[300px] mx-auto mt-2 lg:w-[570px]'>We welcome participants from diverse backgrounds who are passionate about
                 technology and eager to embark on a software development career journey.
             </p>
         </div>
 
-        <div className="flex flex-col lg:ml-10 lg:gap-16 lg:flex-row md:flex-row">
+        <div className="flex justify-center flex-col lg:ml-10 lg:gap-16 lg:flex-row md:flex-row">
 
                     
             <div className="boxes flex flex-col gap-2 w-[350px]">
@@ -58,21 +59,22 @@ const SectionFour = () => {
                 />
             </div>
 
-            <div className="images lg:mt-32 ">
+            <div className="images lg:mt-22 ">
             
-                <img src={girl} alt=""  />
+                <img src={girl} alt="" className='mt-10'  />
 
-                <div className="cards flex gap-2  mb-4 lg:ml-10  ">
-                   <ApplyCard
-                       className="h-[100px] md:h-[150px] lg:h-[150px] w-[150px] md:w-[200px] lg:w-[200px]" 
+                <div className="cards flex  lg:flex-row  gap-2  mb-4 ml-5 lg:ml-20  ">
+                
+                    <Card
+                    
                         title='1000+'
                         desc='Program participants'
-                   />
-                   <ApplyCard
-                       className="h-[100px] md:h-[150px] lg:h-[150px] w-[150px] md:w-[200px] lg:w-[200px]" 
+                    />
+                    <Card
+                    
                         text='85%'
                         desc='Job placement'
-                   />
+                    />
                 </div>
             </div>
         

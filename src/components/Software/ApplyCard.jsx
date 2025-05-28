@@ -20,7 +20,7 @@ const ApplyCard = ({
 }) => {
   return (
     <div
-        className={`flex flex-row gap-4 px-2 py-4 shadow-lg rounded-md ${className}`}
+        className={`flex flex-col gap-4 px-2 py-4 shadow-lg rounded-md ${className}`}
         style={{
             backgroundColor,
             borderTop: `6px solid ${borderTopColor}`,
@@ -48,7 +48,7 @@ const ApplyCard = ({
         )}
 
         <div className="applytext">
-                {title && <h5 className="text-lg text-[#1d3793] font-bold mb-2">{title}</h5>}
+                {title && <h5 className="text-lg  text-[#1d3793] font-bold mb-2">{title}</h5>}
                 {text && <h5 className="text-lg text-[#fbb404] font-bold mb-2">{text}</h5>}
                 {desc && <p className="text-sm w-[200px] text-gray-600">{desc}</p>}
 

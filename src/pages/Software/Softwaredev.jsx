@@ -6,7 +6,7 @@ import SectionFour from '../../components/Software/SectionFour'
 
 const Softwaredev = () => {
   return (
-    <div>
+    <div className=''>
         
         <HeroSoftdev/>
         <Sectiontwo/>

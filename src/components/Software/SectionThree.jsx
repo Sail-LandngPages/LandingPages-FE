@@ -23,7 +23,7 @@ const SectionThree = () => {
             </p>
         </div>
 
-          <div className="boxes px-7 lg:px-0 md:px-0 lg:ml-10 md:ml-10  flex flex-col md:flex-row lg:flex-row gap-6 md:gap-15 lg:gap-15 mt-10 ">
+          <div className="boxes px-7 lg:px-0 md:px-0  justify-center  flex flex-col md:flex-row lg:flex-row gap-6 md:gap-15 lg:gap-15 mt-10 ">
                 <OptionBox
                 backgroundColor= '#477ee0'
                 className="h-[200px] md:h-[250px] lg:h-[250px] w-[320px] md:w-[200px] lg:w-[200px]" 
@@ -75,7 +75,7 @@ const SectionThree = () => {
             />
         </div>
 
-          <div className="boxes px-7 lg:px-0 md:px-0 lg:ml-10 md:ml-10  flex flex-col md:flex-row lg:flex-row gap-6 md:gap-15 lg:gap-15 mt-10 ">
+          <div className="boxes px-7 lg:px-0 md:px-0 justify-center  flex flex-col md:flex-row lg:flex-row gap-6 md:gap-15 lg:gap-15 mt-10 ">
              <OptionBox
                 backgroundColor= '#477ee0'
                 className="h-[200px] md:h-[250px] lg:h-[250px]  w-[320px] md:w-[200px] lg:w-[200px]" 
@@ -129,7 +129,7 @@ const SectionThree = () => {
         </div>
 
 
-        <div className='flex flex-col lg:gap-30 lg:ml-4 lg:flex-row md:flex-row mt-6'>
+        <div className='flex flex-col lg:gap-30 justify-center  lg:flex-row md:flex-row mt-6'>
                 <div>
                     <img src={laptop} alt="" className=' mt-6' />
                 </div>
