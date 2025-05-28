@@ -43,23 +43,14 @@ const Program = () => {
   return (
     <div>
          <section className="max-w-7xl mx-auto px-4 py-12 bg-white ml-10">
+          <div className='h-22 w-300'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FAFAFA" fill-opacity="1" d="M0,256L120,213.3C240,171,480,85,720,53.3C960,21,1200,43,1320,53.3L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg></div>
+          
       {/* Header */}
       <header className="mb-8 space-y-4">
          
 
         <button className='bg-[#FBB404]'>
-           {/* <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mr-2"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg> */}
+          
           <span className="inline-block  text-[#ffff] text-xs font-medium px-3 py-1 rounded-full">
           
           Benefits
