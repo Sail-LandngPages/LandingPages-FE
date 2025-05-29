@@ -1,8 +1,11 @@
-import React from 'react'
+
+
 import { 
-  CheckCircle2, Users, BriefcaseBusiness, FileText, Clock, Award 
+   Users, BriefcaseBusiness, FileText, Clock, Award 
 } from 'lucide-react';
 import pix from "../assets/images/pix.png"
+import frame1 from "../assets/images/fram.png"
+import framer from "../assets/images/framer.png"
 import Stats from '../stats/Stats';
 const benefits = [
   {
@@ -40,9 +43,11 @@ const benefits = [
   
 
 const Program = () => {
+  
+   
   return (
-    <div >
-         <section className="max-w-7xl mx-auto px-4 py-12 bg-[#ffff] ">
+    <div  >
+         <section className="max-w-7xl mx-auto px-4 py-12 bg-[#ffff] "  data-aos="fade-up">
           <div className='h-22  overflow-hidden'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FAFAFA" fill-opacity="1" d="M0,256L120,213.3C240,171,480,85,720,53.3C960,21,1200,43,1320,53.3L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg></div>
           
       {/* Header */}
@@ -78,14 +83,10 @@ const Program = () => {
       <div className="grid md:grid-cols-2 gap-10 items-start lg:ml-10">
         {/* Image */}
         <figure className="relative">
-          {/* <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/22.05.2025_09.03.33_REC-GXu6J2eYKM7LWXerpHTdgpqolQ3jzt.png"
-            alt="Students working on design sketches and wireframes"
-            className="rounded-lg w-full object-cover"
-          /> */}
+          <img src={framer} alt="" width={60} className='-mb-12 opacity-50 -ml-5'/>
           <img src={pix} alt="" className='rounded-lg w-100 object-cover ' />
           {/* Decorative dots */}
-          
+          <img src={frame1} alt="" width={100} className='ml-80 -mt-10 '/>
         </figure>
 
         {/* Benefits list */}
