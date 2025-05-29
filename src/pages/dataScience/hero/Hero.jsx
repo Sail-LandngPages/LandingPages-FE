@@ -32,7 +32,7 @@ const Hero = () => {
                 Join Now</motion.button>
             </div>
         </div>
-            <motion.img 
+            <motion.img className='hero-main-image'
              initial={{ opacity: 0, scale: 0.1 }}
              animate={{ opacity: 1, scale: 1 }}
              transition={{duration:1}} src={hero_image} alt="" />
