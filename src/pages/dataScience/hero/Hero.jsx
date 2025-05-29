@@ -14,7 +14,7 @@ const Hero = () => {
             initial={{opacity:0, scale: 0.1 }}
             animate={{opacity:1, scale: 1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 , duration:5}}>
-              <span>Data</span> is the new gold! <br /> it's time to dig</motion.h1>
+              <span>Data</span> is the new gold!  it's time to dig</motion.h1>
             <motion.p 
             className="hero-paragraph"
               initial={{ x: -100,  }}

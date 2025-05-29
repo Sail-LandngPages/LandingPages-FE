@@ -45,34 +45,34 @@ const Faq = () => {
         <p className="mb-6 text-gray-700">
           Got questions about joining our tech programs? We've got answers! Here are some frequently asked questions to help you get started.
         </p>
-        <Accordion type="multiple" className="space-y-2">
+        <Accordion type="multiple" className="space-y-2 list-none">
           <AccordionItem value="faq1">
-            <div className=" p-4 rounded-md">
-              <summary className="font-medium cursor-pointer">How do I register for a course?</summary>
+            <div className=" p-4 border-b">
+              <summary className="font-medium ">How do I register for a course?</summary>
               <p className="text-sm mt-2 text-gray-700">Visit our website, browse available courses, and follow the registration instructions.</p>
             </div>
           </AccordionItem>
           <AccordionItem value="faq2">
-            <div className=" p-4 rounded-md">
-              <summary className="font-medium cursor-pointer">Are the instructors experienced?</summary>
+            <div className=" p-4 border-b">
+              <summary className="font-medium ">Are the instructors experienced?</summary>
               <p className="text-sm mt-2 text-gray-700">Yes, our instructors are industry professionals with real-world experience.</p>
             </div>
           </AccordionItem>
           <AccordionItem value="faq3">
-            <div className=" p-4 rounded-md">
-              <summary className="font-medium cursor-pointer">Will these Courses guarantee me a tech job?</summary>
+            <div className=" p-4 border-b">
+              <summary className="font-medium ">Will these Courses guarantee me a tech job?</summary>
               <p className="text-sm mt-2 text-gray-700">While we provide strong career support, job placement isn't guaranteed.</p>
             </div>
           </AccordionItem>
           <AccordionItem value="faq4">
-            <div className=" p-4 rounded-md">
-              <summary className="font-medium cursor-pointer">Will I receive a certificate after completing a course?</summary>
+            <div className=" p-4  border-b">
+              <summary className="font-medium ">Will I receive a certificate after completing a course?</summary>
               <p className="text-sm mt-2 text-gray-700">Yes, you'll receive a certificate upon successfully completing the course.</p>
             </div>
           </AccordionItem>
           <AccordionItem value="faq5">
-            <div className="border-b p-4 rounded-md">
-              <summary className="font-medium cursor-pointer">Can these classes help me build real projects or a portfolio?</summary>
+            <div className="border-b p-4 ">
+              <summary className="font-medium ">Can these classes help me build real projects or a portfolio?</summary>
               <p className="text-sm mt-2 text-gray-700">Absolutely! Our classes include project-based learning to help you build a portfolio.</p>
             </div>
           </AccordionItem>

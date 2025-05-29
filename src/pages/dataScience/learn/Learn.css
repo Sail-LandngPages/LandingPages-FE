@@ -1,8 +1,7 @@
 .learn-container{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    padding: 0px 25px;
+    padding: 0px 95px;
     margin-bottom: 30px;
 }
 .learn-text{
@@ -26,23 +25,42 @@
     font-style: 24px;
     font-weight: 400;
     margin-bottom: 10px;
+    max-width: 580px;
+    margin: auto;
 }
 .learn-cards{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap:40px;
-    padding: 0 50px;
+    gap:20px;
+    padding: 0 30px;
     
 }
 
-
-@media (max-width:838px) {
+@media(max-width:1069px){
 .learn-container{
     display: flex;
     flex-direction: column;
-    height: fit-content;
-    padding: 0px 25px;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+}
+.learn-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:10px;
+    padding: 0 10px;
+    
+}
+} 
+
+
+@media (max-width:838px) { 
+.learn-container{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px;
 }
 .learn-title{
     font-size: 36px;
@@ -50,17 +68,15 @@
     font-weight: bold;
 }
 .learn-paragraph{
-    padding: 0 45px;
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 40px;
 }
 .learn-cards{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap:10px;
-    padding: 0 50px;
-    margin-bottom: -230px;
+    /* gap:10px; */
+    padding: 0 30px;
 }
 }
 
@@ -68,7 +84,6 @@
 .learn-container{
     display: flex;
     flex-direction: column;
-    height: 1400px;
     padding: 0px 25px;
 }
 .learn-title{
@@ -81,12 +96,5 @@
     font-size: 14px;
     margin-bottom: 10px;
 }
-/* .learn-cards{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap:40px;
-    padding: 0 50px;
  
-} */
 }
