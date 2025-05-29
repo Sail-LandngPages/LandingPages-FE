@@ -73,7 +73,7 @@ const Testimony = () => {
                       <div className="flex items-center space-x-4">
                         <button 
                           onClick={handleNext}
-                          className="bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold px-5 py-2 rounded-full flex items-center space-x-2"
+                          className="bg-[#133C8A] hover:bg-blue-800 text-white text-sm font-semibold px-5 py-2 rounded-full flex items-center space-x-2"
                         >
                           <span>Next</span>
                           <span className="text-lg">&rarr;</span>
@@ -87,7 +87,7 @@ const Testimony = () => {
                                 className={`w-3 h-3 rounded-full ${index === currentIndex ? 'bg-blue-700' : 'bg-blue-200'}`} 
                               />
                               {index < testimonials.length - 1 && (
-                                <div className="w-10 h-1 bg-blue-200" />
+                                <div className="w-15 h-1 bg-blue-200" />
                               )}
                             </React.Fragment>
                           ))}
@@ -96,7 +96,7 @@ const Testimony = () => {
                     </div>
 
                     {/* Right section - Images */}
-                    <div className="flex space-x-4">
+                    <div className="flex space-x-4 ml-6">
                       {testimonials.filter((_, index) => index !== currentIndex).slice(0, 2).map((testimonial, index) => (
                         <div key={index} className="w-24 h-32 bg-blue-900 bg-opacity-60 rounded overflow-hidden">
                           <img
