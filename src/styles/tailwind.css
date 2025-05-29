@@ -28,3 +28,36 @@ body {
   font-style: normal;
 }
 
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(var(--orbit-distance)) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(var(--orbit-distance)) rotate(-360deg);
+  }
+}
+
+.spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.orbit {
+  animation: orbit 10s linear infinite;
+  transform-origin: center;
+}
+
+.orbit.reverse {
+  animation-direction: reverse;
+}
+
+

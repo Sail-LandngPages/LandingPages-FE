@@ -7,6 +7,7 @@ import {BrowserRouter , Router, Routes, Route } from 'react-router-dom'
 import Header from "./static/Header"
 import Footer from "./static/Footer"
 import GameDev from "./pages/GameDev/GameDev"
+import Blockchain from "./pages/BlockChain/Blockchain"
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path= "/softwareDev" element={<Softwaredev/>}/>
         <Route path= "/productDesign" element={ <ProductDesign/>}/>
         <Route path="/gameDev" element={<GameDev/>}/>
+        <Route path="/blockChain" element={<Blockchain/>}/>
         
       </Routes>
       <Footer/>

@@ -16,6 +16,9 @@ export default {
         "custom-bottom": "0 35px 60px -15px rgba(0, 0, 0, 0.4)",
         "bottom": "0px 4px 10px #D97706"
       },
+      animation: {
+        'spin-slow': 'spin 10s linear infinite',
+      },
     },
   },
   plugins: [],
