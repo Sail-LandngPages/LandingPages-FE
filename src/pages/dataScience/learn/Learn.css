@@ -33,7 +33,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap:20px;
-    padding: 0 30px;
+    padding: 0 50px;
     
 }
 
@@ -80,7 +80,7 @@
 }
 }
 
-@media (max-width: 428px){
+/* @media (max-width: 428px){
 .learn-container{
     display: flex;
     flex-direction: column;
@@ -97,4 +97,4 @@
     margin-bottom: 10px;
 }
  
-}
+} */
