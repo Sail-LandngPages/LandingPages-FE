@@ -19,6 +19,15 @@ export default {
       animation: {
         'spin-slow': 'spin 10s linear infinite',
       },
+      screens: {
+        'xs': '375px', // For iPhone 13 Mini
+        'sm-mobile': '390px', // For your 390px breakpoint
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
     },
   },
   plugins: [],

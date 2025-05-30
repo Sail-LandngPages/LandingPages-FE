@@ -17,7 +17,7 @@ const Learn = () => {
     const box1Ref = useRef(null);
     const isBoxVisible = useInView(titleRef, { once: true, amount: 0.5 });
     const isParaVisible = useInView(paragraphRef, { once: true, amount: 0.5 });
-    const isBox1Visible = useInView(box1Ref, { once: true,amount:.1 });
+    const isBox1Visible = useInView(box1Ref, { once: true,amount:0 });
     const animationStates = {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }, 
@@ -27,8 +27,10 @@ const Learn = () => {
       visible:{opacity:1, scale:1, transition:{duration:1}},
     };
     const animationState3 = {
-      hidden:{opacity:0, scale:0},
-      visible:{opacity:1, scale:1, transition:{duration:1}},
+      // hidden:{opacity:0, scale:0},
+      // visible:{opacity:1, scale:1, transition:{duration:1}},
+    //   hidden: { opacity: 0, x: 100 },
+    // visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }, 
     };
 
   return (
@@ -48,10 +50,11 @@ const Learn = () => {
         </div>
 
         <motion.div className="learn-cards"
-         ref={box1Ref}
-            variants={animationState3}
-            initial='hidden'
-            animate={isBox1Visible ? 'visible':'hidden'}>
+        //  ref={box1Ref}
+        //     variants={animationState3}
+        //     initial='hidden'
+        //     animate={isBox1Visible ? 'visible':'hidden'}
+            >
           
             <LearnCard title = 'Data Analytics & Visualization'
                         description = 'Transform numbers into clear , impactful visuals using Excel, PowerBI, and Tableau'
