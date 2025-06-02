@@ -9,11 +9,12 @@ import WhoApply from '../ProductPage/whoApply'
 import Testimony from '../ProductPage/Testimony'
 import Community from '../ProductPage/Community'
 import Faq from '../ProductPage/Faq'
+import Newsletter from './HomePage/components/Newsletter'
 
 const ProductDesign = () => {
   return (
     <div>
-        <Header/>
+        
         <ProductHero/>
         <Program/>
         <Learn/>
@@ -21,8 +22,8 @@ const ProductDesign = () => {
         <ProgramDetails/>
         <Testimony/>
         <Community/>
-        <Faq/>
-        <Footer/>
+        <Newsletter/>
+      
     </div>
   )
 }

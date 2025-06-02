@@ -1,0 +1,168 @@
+.hero-container{
+    background: url('/dataScienceHeroBg.png');
+    background-size: cover;
+    height: calc(96vh - 57px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 50px;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title{
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 40px;
+
+    span{
+        color: #5BBCB4;
+    }
+}
+
+.hero-paragraph{
+    color: white;
+    font-family: Sora;
+    font-weight: 200;
+    font-size: 19px;
+    margin-bottom: 90px;
+    max-width: 620px;
+    text-align: left;
+}
+.hero-button{
+    display: flex;
+    justify-content: left;
+    margin-top: -60px;
+}
+.join-now{
+    background-color: #5BBCB4;
+    color: #fff;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 20px;
+    font-family: Sora;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: .5s;
+}
+.join-now:hover{
+    background-color: #1eb9ac;
+    padding: 17px 47px;
+    border-radius: 30px;
+}
+
+/* @media (max-width:1064px){
+.hero-container{
+    background: url('/dataScienceHeroBg.png');
+    background-size: cover;
+    height: calc(96vh - 57px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+.hero-title{
+    font-size: 50px;
+    
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 490px;
+}
+img{
+    width: 40%;
+}
+}  */
+
+
+@media (max-width: 838px){
+.hero-container{
+    /* background: url('/dataScienceHeroBg.png'); */
+    background-size: cover;
+    height: calc(930px + 57px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-text{
+    text-align: center;
+    
+}
+.hero-title{
+    max-width: 550px;
+    font-size: 50px;
+}
+.hero-paragraph{
+    color: white;
+    font-family: Sora;
+    font-weight: 200;
+    font-size: 19px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.hero-button{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+.join-now{
+    background-color: #5BBCB4;
+    color: #fff;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 20px;
+    font-family: Sora;
+    font-weight: 600;
+    
+}
+img{
+    width: 60%;
+}
+}
+
+@media (max-width:428px){
+    .hero-container{
+    background: url('/dataScienceHeroBg.png');
+    background-size: contain;
+    height: calc(900px - 57px);
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+    .hero-title{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    margin-top:-60px;
+
+    span{
+        color: #5BBCB4;
+    }
+}
+.hero-paragraph{
+    color: white;
+    font-family: Sora;
+    font-weight: 200;
+    font-size: 13px;
+    margin-bottom: 60px;
+    text-align: center;
+    padding: 0 60px;
+}
+.hero-image{
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+
+}
+img{
+    width: 100%;
+}
+}
