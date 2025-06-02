@@ -11,7 +11,7 @@ const ProductHero = () => {
       
       
       <motion.div
-        className="absolute top-[40%] right-[6%] w-20 h-20 rounded-full bg-[#D29DAC] opacity-50"
+        className="absolute lg:top-[40%] lg:right-[6%] w-20 h-20 rounded-full bg-[#D29DAC] opacity-50 bottom-[29%] right-[8%]"
         animate={{ rotate: -360 }} // Rotates in opposite direction
         transition={{
           duration: 15,
@@ -21,7 +21,7 @@ const ProductHero = () => {
       />
       
       <motion.div
-        className="absolute top-[50%] right-[5%] w-25 h-15 rounded-full bg-[#DED8E1] opacity-50"
+        className="absolute lg:top-[50%] lg:right-[5%] w-25 h-15 rounded-full bg-[#DED8E1] opacity-50 bottom-[20%] right-[6%]"
         animate={{ rotate: 360 }}
         transition={{
           duration: 25,
@@ -32,7 +32,7 @@ const ProductHero = () => {
 
       {/* Ease-in-out animations (breathing/pulsing effect) */}
       <motion.div
-        className="absolute lg:top-[76%] lg:right-[9%] w-45 h-20 rounded-full bg-[#FFD9E3] opacity-70"
+        className="absolute lg:top-[76%] lg:right-[9%] w-45 h-20 rounded-full bg-[#FFD9E3] opacity-70 bottom-14 right-[15%]"
         animate={{
           scale: [1, 1.05, 1],
           opacity: [0.7, 0.85, 0.7]
@@ -45,7 +45,7 @@ const ProductHero = () => {
       />
       
       <motion.div
-        className="absolute lg:top-[77%] lg:right-[24%] w-67 h-21 rounded-full bg-[#FFECF0] opacity-50"
+        className="absolute lg:top-[77%] lg:right-[24%] w-67 h-19 rounded-full bg-[#FFECF0] opacity-50 bottom-14 "
         animate={{
           scale: [1, 1.1, 1],
           opacity: [0.5, 0.7, 0.5]
@@ -58,7 +58,7 @@ const ProductHero = () => {
       />
       
       <motion.div
-        className="absolute lg:top-[70%] lg:right-[49.6%] w-13 h-18 rounded-full bg-[#FFECF0] opacity-60"
+        className="absolute lg:top-[70%] lg:right-[49.6%] w-14 h-16 rounded-full bg-[#FFECF0] opacity-60 bottom-40 "
         animate={{
           y: ["0%", "-5%", "0%"],
           opacity: [0.6, 0.8, 0.6]
@@ -71,7 +71,7 @@ const ProductHero = () => {
       />
       
       <motion.div
-        className="absolute lg:top-[70%] lg:right-[35%] w-47 h-15 rounded-full bg-[#FFDAD6] opacity-60"
+        className="absolute lg:top-[70%] lg:right-[35%] w-47 h-15 rounded-full bg-[#FFDAD6] opacity-60 bottom-[14%] right-[39%]"
         animate={{
           x: ["0%", "3%", "0%"],
           opacity: [0.6, 0.9, 0.6]
@@ -84,7 +84,7 @@ const ProductHero = () => {
       />
       
       <motion.div
-        className="absolute lg:top-[42%] lg:right-[38%] w-60 h-60 rounded-[2rem] bg-[#F4F0EF] opacity-50"
+        className="absolute lg:top-[37%] lg:right-[38%] w-55 h-55 rounded-[2rem] bg-[#F4F0EF] opacity-50 bottom-[23%] right-20%"
         animate={{
           scale: [1, 1.02, 1],
           borderRadius: ["2rem", "2.5rem", "2rem"]
@@ -148,12 +148,12 @@ const ProductHero = () => {
             </div>
           </div>
          
-          <div className="order-1 lg:order-2 relative reverse ">
+          <div className="order-2 lg:order-2 relative  ">
             {/* Image container with border */}
             <div className="relative rounded-2xl overflow-hidden  -ml-14  ">
             
              
-              <img src={man} alt="" width={480} height={480} className='ml-20 mt-12'/>
+              <img src={man} alt=""  height={480} className='lg:ml-20 mt-13 ml-13 w-90 lg:w-100 sm:justify-center '/>
             </div>
           
 
@@ -164,7 +164,7 @@ const ProductHero = () => {
               </svg>
             </div>
            <div>
-        <img src={star} alt="" width={100} height={100} className=' -ml-13 mb-7'/>
+        <img src={star} alt="" width={90} height={100} className=':-ml-13 mb-7 '/>
       </div>
           </div>
         </div>

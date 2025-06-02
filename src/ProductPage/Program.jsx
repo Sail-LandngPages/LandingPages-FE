@@ -86,7 +86,7 @@ const Program = () => {
           <img src={framer} alt="" width={60} className='-mb-12 opacity-50 -ml-5'/>
           <img src={pix} alt="" className='rounded-lg w-100 object-cover ' />
           {/* Decorative dots */}
-          <img src={frame1} alt="" width={100} className='ml-80 -mt-10 '/>
+          <img src={frame1} alt="" width={100} className='lg:ml-80 -mt-10 ml-74'/>
         </figure>
 
         {/* Benefits list */}
@@ -107,16 +107,12 @@ const Program = () => {
 
       {/* Stats */}
       <div className="grid grid-cols-3  mt-10 gap-0.5 lg:ml-10 ">
-        {/* {stats.map(({ number, label }) => (
-          <div key={label}>
-            <div className="text-2xl font-bold text-gray-900">{number}</div>
-            <div className="text-sm text-gray-600">{label}</div>
-          </div>
-        ))} */}
+       
         <Stats/>
       </div>
-      <div className='overflow-hidden -mt-50'> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FAFAFA" fill-opacity="1" d="M0,256L80,261.3C160,267,320,277,480,282.7C640,288,800,288,960,250.7C1120,213,1280,139,1360,101.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg></div>
+      {/* <div className='overflow-hidden -mt-50'> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FAFAFA" fill-opacity="1" d="M0,256L80,261.3C160,267,320,277,480,282.7C640,288,800,288,960,250.7C1120,213,1280,139,1360,101.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg></div> */}
     </section>
+    <div className='overflow-hidden lg:-mt-50 -mt-40'> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FAFAFA" fill-opacity="1" d="M0,256L80,261.3C160,267,320,277,480,282.7C640,288,800,288,960,250.7C1120,213,1280,139,1360,101.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg></div>
     </div>
   )
 }
