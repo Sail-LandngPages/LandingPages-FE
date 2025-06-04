@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Tilt from 'react-parallax-tilt'
 import Hero from './components/Hero'
 import CardReason from './components/CardReason'
 import crypto from '../../assets/images/svg/crypto.svg'
@@ -22,12 +23,22 @@ const containerVariants = {
 
 const Blockchain = () => {
   return (
-    <div>
-      <Hero />
+    <div className='relative overflow-hidden'>
+      {/* Will add Animated background gradient */}
+      <div className="absolute top-0 left-0 w-full h-full z-[-1] bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] animate-pulse-slow"></div>
 
-      {/* Animated Text Section */}
+      {/* I should add the Parallax Hero */}
       <motion.div
-        className='flex justify-center items-center mt-4'
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2 }}
+      >
+        <Hero />
+      </motion.div>
+
+      {/* Lemme add Text Section with fade-in */}
+      <motion.div
+        className='flex justify-center items-center mt-4 text-white'
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -48,15 +59,15 @@ const Blockchain = () => {
         </motion.p>
       </motion.div>
 
-      {/* Animated Cards */}
+      {/* Tomorrow, ,ake sure u add each card 3D Tilt Cards with Motion */}
       <motion.div
-        className='flex justify-center items-center mt-4 gap-[65px]'
+        className='flex justify-center items-center mt-8 gap-[65px] flex-wrap'
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
-        {[ 
+        {[
           {
             image: btcElder,
             text: "Global demand for blockchain skills across fintech, supply chain, healthcare & more",
@@ -73,14 +84,21 @@ const Blockchain = () => {
             bgColor: "bg-[#5CBCB4] mb-2"
           }
         ].map((item, index) => (
-          <motion.div
+          <Tilt
             key={index}
-            variants={fadeInUp}
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 300 }}
+            glareEnable={true}
+            glareMaxOpacity={0.4}
+            scale={1.05}
+            transitionSpeed={500}
           >
-            <CardReason image={item.image} text={item.text} bgColor={item.bgColor} />
-          </motion.div>
+            <motion.div
+              variants={fadeInUp}
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <CardReason image={item.image} text={item.text} bgColor={item.bgColor} />
+            </motion.div>
+          </Tilt>
         ))}
       </motion.div>
     </div>

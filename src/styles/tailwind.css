@@ -63,4 +63,18 @@ body {
   animation-direction: reverse;
 }
 
+@keyframes pulse-slow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-pulse-slow {
+  background-size: 200% 200%;
+  animation: pulse-slow 12s ease infinite;
+}
+
 

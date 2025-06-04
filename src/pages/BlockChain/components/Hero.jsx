@@ -6,11 +6,13 @@ import ellipse from '../../../assets/images/svg/ellipse.svg'
 import eth from '../../../assets/images/svg/eth.svg'
 import btc from '../../../assets/images/svg/btc.svg'
 import cosmos from '../../../assets/images/svg/cosmos.svg'
+import Usdt from '../../../assets/images/svg/usdt.svg'
 
 // i am importing the second ring images here
 import shiba from '../../../assets/images/svg/shiba.svg'
 import ava from '../../../assets/images/svg/ava.svg'
 import poly from '../../../assets/images/svg/poly.svg'
+import coin from '../../../assets/images/svg/coin.svg'
 
 const rings = [
   {
@@ -19,7 +21,7 @@ const rings = [
     ethSize: 40,
     orbitDistance: 260,
     orbitReverse: false,
-    icons: [eth, btc, cosmos],
+    icons: [eth, btc, Usdt],
   },
   {
     id: 2,
@@ -27,7 +29,7 @@ const rings = [
     ethSize: 30,
     orbitDistance: 230,
     orbitReverse: true,
-    icons: [shiba, ava, poly],
+    icons: [coin, ava, poly],
   },
   {
     id: 3,
@@ -51,7 +53,7 @@ const Hero = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 pb-4">
       <div className="relative" style={{ width: rings[0].size, height: rings[0].size }}>
-        {/* Central Text + Buttons */}
+       
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
           <p className="sora text-[12px] mb-2 text-amber-300 font-bold">
             They say “buy the dip,” we say: code the chain.
@@ -69,7 +71,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Ring Elements */}
+        {/* Will add the iIng designs here */}
         {rings.map(({ id, size, ethSize, orbitDistance, orbitReverse, icons }) => (
           <div
             key={id}
@@ -81,7 +83,7 @@ const Hero = () => {
               marginLeft: -size / 2,
             }}
           >
-            {/* Rotating Ellipse */}
+            {/* iwould add the ellipse rotating image would go here */}
             <div className="absolute inset-0 spin-slow flex items-center justify-center">
               <img
                 src={ellipse}
@@ -94,7 +96,7 @@ const Hero = () => {
               />
             </div>
 
-            {/* 3 Unique Orbiting Icons per Ring */}
+           
             {icons.map((icon, i) => (
               <div
                 key={i}
