@@ -2,7 +2,7 @@ import React from 'react'
 import '../../../styles/tailwind.css'
 import ellipse from '../../../assets/images/svg/ellipse.svg'
 
-// Import your unique images for each ring
+
 import eth from '../../../assets/images/svg/eth.svg'
 import btc from '../../../assets/images/svg/btc.svg'
 import cosmos from '../../../assets/images/svg/cosmos.svg'
@@ -53,7 +53,7 @@ const Hero = () => {
         {/* Central Text + Buttons */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
           <p className="sora text-[12px] mb-2 text-amber-300 font-bold">
-            They say “buy the dip,”  we say: code the chain.
+            They say “buy the dip,” we say: code the chain.
           </p>
           <h1 className="text-2xl font-bold text-gray-800 mb-4 w-[200px] raleway">
             Don't Just HODL Your Dreams — Build Them.
