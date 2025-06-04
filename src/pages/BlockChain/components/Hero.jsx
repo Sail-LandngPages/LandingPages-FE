@@ -49,7 +49,7 @@ const rings = [
 
 const Hero = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 pb-4">
       <div className="relative" style={{ width: rings[0].size, height: rings[0].size }}>
         {/* Central Text + Buttons */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
@@ -60,10 +60,10 @@ const Hero = () => {
             Don't Just HODL Your Dreams — Build Them.
           </h1>
           <div className="flex gap-4">
-            <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+            <button className="raleway px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
               Apply Now
             </button>
-            <button className="px-4 py-2 bg-gray-300 text-gray-800 rounded hover:bg-gray-400 transition">
+            <button className="raleway px-4 py-2 bg-transparent border-1 text-[#5D5D5D]  rounded hover:bg-gray-400 transition">
               Learn More
             </button>
           </div>
