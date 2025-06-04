@@ -2,7 +2,7 @@ import React from 'react'
 import '../../../styles/tailwind.css'
 import ellipse from '../../../assets/images/svg/ellipse.svg'
 
-
+// i am importing the first ring images here
 import eth from '../../../assets/images/svg/eth.svg'
 import btc from '../../../assets/images/svg/btc.svg'
 import cosmos from '../../../assets/images/svg/cosmos.svg'
