@@ -7,6 +7,7 @@ import eth from '../../../assets/images/svg/eth.svg'
 import btc from '../../../assets/images/svg/btc.svg'
 import cosmos from '../../../assets/images/svg/cosmos.svg'
 
+// i am importing the second ring images here
 import shiba from '../../../assets/images/svg/shiba.svg'
 import ava from '../../../assets/images/svg/ava.svg'
 import poly from '../../../assets/images/svg/poly.svg'
