@@ -28,6 +28,9 @@ body {
   font-style: normal;
 }
 
+.bold{
+  font-weight: 700;
+}
 
 @keyframes spin-slow {
   from {
