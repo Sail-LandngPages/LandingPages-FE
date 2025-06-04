@@ -1,14 +1,22 @@
-import Footer from "../../static/Footer";
-import Header from "../../static/Header";
-import GameHero from "./Components/GameHero";
 
+import GameHero from "./Components/gameHero";
+import HelpCenter from "./Components/HelpCenter";
+import Join from "./Components/Join";
+import MissionBriefing from "./Components/MissionBriefing";
+import PlayerReviews from "./Components/PlayerReviews";
+import SkillTree from "./Components/SkillTree";
+import Unlock from "./Components/Unlock";
 const GameDev = () => {
 
     return(
         <>
-            <Header />
             <GameHero/>
-            <Footer />
+            <Unlock/>
+            <MissionBriefing/>
+            <SkillTree/>
+            <PlayerReviews/>
+            <HelpCenter/>
+            <Join/>
         </>
     )
 }
