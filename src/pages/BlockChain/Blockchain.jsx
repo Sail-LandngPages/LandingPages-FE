@@ -1,5 +1,5 @@
 import React from 'react'
-// import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Tilt from 'react-parallax-tilt'
 import Hero from './components/Hero'
 import CardReason from './components/CardReason'
