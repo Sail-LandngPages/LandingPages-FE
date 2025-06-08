@@ -80,17 +80,17 @@ const Program = () => {
       </header>
 
       {/* Content */}
-      <div className="grid md:grid-cols-2 gap-10 items-start lg:ml-10">
+      <div className="grid md:grid-cols-2 gap-10 items-start lg:ml-10 ">
         {/* Image */}
         <figure className="relative">
-          <img src={framer} alt="" width={60} className='-mb-12 opacity-50 -ml-5'/>
+          {/* <img src={framer} alt="" width={60} className='-mb-12 opacity-50 -ml-5'/> */}
           <img src={pix} alt="" className='rounded-lg w-100 object-cover ' />
           {/* Decorative dots */}
-          <img src={frame1} alt="" width={100} className='lg:ml-80 -mt-10 ml-74'/>
+          {/* <img src={frame1} alt="" width={100} className='lg:ml-80 -mt-10 ml-74'/> */}
         </figure>
 
         {/* Benefits list */}
-       <ul className="space-y-12">
+       <ul className="space-y-12 order-1">
   {benefits.map(({ title, description, icon }) => (
     <li key={title} className="flex gap-4">
       <div className="w-10 h-10 bg-[#133C8A] rounded-lg flex items-center justify-center text-white flex-shrink-0">
