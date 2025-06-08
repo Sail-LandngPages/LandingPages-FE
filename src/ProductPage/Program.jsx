@@ -1,8 +1,11 @@
-import React from 'react'
+
+
 import { 
-  CheckCircle2, Users, BriefcaseBusiness, FileText, Clock, Award 
+   Users, BriefcaseBusiness, FileText, Clock, Award 
 } from 'lucide-react';
 import pix from "../assets/images/pix.png"
+import frame1 from "../assets/images/fram.png"
+import framer from "../assets/images/framer.png"
 import Stats from '../stats/Stats';
 const benefits = [
   {
@@ -40,9 +43,11 @@ const benefits = [
   
 
 const Program = () => {
+  
+   
   return (
-    <div >
-         <section className="max-w-7xl mx-auto px-4 py-12 bg-[#ffff] ">
+    <div  >
+         <section className="max-w-7xl mx-auto px-4 py-12 bg-[#ffff] "  data-aos="fade-up">
           <div className='h-22  overflow-hidden'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FAFAFA" fill-opacity="1" d="M0,256L120,213.3C240,171,480,85,720,53.3C960,21,1200,43,1320,53.3L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg></div>
           
       {/* Header */}
@@ -78,22 +83,10 @@ const Program = () => {
       <div className="grid md:grid-cols-2 gap-10 items-start lg:ml-10">
         {/* Image */}
         <figure className="relative">
-          {/* <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/22.05.2025_09.03.33_REC-GXu6J2eYKM7LWXerpHTdgpqolQ3jzt.png"
-            alt="Students working on design sketches and wireframes"
-            className="rounded-lg w-full object-cover"
-          /> */}
+          <img src={framer} alt="" width={60} className='-mb-12 opacity-50 -ml-5'/>
           <img src={pix} alt="" className='rounded-lg w-100 object-cover ' />
           {/* Decorative dots */}
-          {/* <div className="hidden md:block absolute -bottom-3 right-3  p-2 rounded-lg ">
-            {[...Array(2)].map((_, row) => (
-              <div key={row} className="flex space-x-3 mt-1 first:mt-0">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="block w-2 h-2 bg-blue-600 rounded-full" />
-                ))}
-              </div>
-            ))}
-          </div> */}
+          <img src={frame1} alt="" width={100} className='lg:ml-80 -mt-10 ml-74'/>
         </figure>
 
         {/* Benefits list */}
@@ -114,16 +107,12 @@ const Program = () => {
 
       {/* Stats */}
       <div className="grid grid-cols-3  mt-10 gap-0.5 lg:ml-10 ">
-        {/* {stats.map(({ number, label }) => (
-          <div key={label}>
-            <div className="text-2xl font-bold text-gray-900">{number}</div>
-            <div className="text-sm text-gray-600">{label}</div>
-          </div>
-        ))} */}
+       
         <Stats/>
       </div>
-      <div className='overflow-hidden -mt-50'> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FAFAFA" fill-opacity="1" d="M0,256L80,261.3C160,267,320,277,480,282.7C640,288,800,288,960,250.7C1120,213,1280,139,1360,101.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg></div>
+      {/* <div className='overflow-hidden -mt-50'> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FAFAFA" fill-opacity="1" d="M0,256L80,261.3C160,267,320,277,480,282.7C640,288,800,288,960,250.7C1120,213,1280,139,1360,101.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg></div> */}
     </section>
+    <div className='overflow-hidden lg:-mt-50 -mt-40'> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FAFAFA" fill-opacity="1" d="M0,256L80,261.3C160,267,320,277,480,282.7C640,288,800,288,960,250.7C1120,213,1280,139,1360,101.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg></div>
     </div>
   )
 }

@@ -1,11 +1,100 @@
 import React from 'react'
 import man from '../assets/images/designing.png'
+import star from '../assets/images/star.png'
 import { motion } from "framer-motion";
 
 const ProductHero = () => {
   return (
     <div>
         <div className="min-h-screen bg-[#FAFAFA] p-4 md:p-8 lg:p-16 relative overflow-hidden">
+        
+      
+      
+      <motion.div
+        className="absolute lg:top-[40%] lg:right-[6%] w-20 h-20 rounded-full bg-[#D29DAC] opacity-50 bottom-[29%] right-[8%]"
+        animate={{ rotate: -360 }} // Rotates in opposite direction
+        transition={{
+          duration: 15,
+          repeat: Infinity,
+          ease: "linear"
+        }}
+      />
+      
+      <motion.div
+        className="absolute lg:top-[50%] lg:right-[5%] w-25 h-15 rounded-full bg-[#DED8E1] opacity-50 bottom-[20%] right-[6%]"
+        animate={{ rotate: 360 }}
+        transition={{
+          duration: 25,
+          repeat: Infinity,
+          ease: "linear"
+        }}
+      />
+
+      {/* Ease-in-out animations (breathing/pulsing effect) */}
+      <motion.div
+        className="absolute lg:top-[76%] lg:right-[9%] w-45 h-20 rounded-full bg-[#FFD9E3] opacity-70 bottom-14 right-[15%]"
+        animate={{
+          scale: [1, 1.05, 1],
+          opacity: [0.7, 0.85, 0.7]
+        }}
+        transition={{
+          duration: 4,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      />
+      
+      <motion.div
+        className="absolute lg:top-[77%] lg:right-[24%] w-67 h-19 rounded-full bg-[#FFECF0] opacity-50 bottom-14 "
+        animate={{
+          scale: [1, 1.1, 1],
+          opacity: [0.5, 0.7, 0.5]
+        }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      />
+      
+      <motion.div
+        className="absolute lg:top-[70%] lg:right-[49.6%] w-14 h-16 rounded-full bg-[#FFECF0] opacity-60 bottom-40 "
+        animate={{
+          y: ["0%", "-5%", "0%"],
+          opacity: [0.6, 0.8, 0.6]
+        }}
+        transition={{
+          duration: 3.5,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      />
+      
+      <motion.div
+        className="absolute lg:top-[70%] lg:right-[35%] w-47 h-15 rounded-full bg-[#FFDAD6] opacity-60 bottom-[14%] right-[39%]"
+        animate={{
+          x: ["0%", "3%", "0%"],
+          opacity: [0.6, 0.9, 0.6]
+        }}
+        transition={{
+          duration: 4.5,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      />
+      
+      <motion.div
+        className="absolute lg:top-[37%] lg:right-[38%] w-55 h-55 rounded-[2rem] bg-[#F4F0EF] opacity-50 bottom-[23%] right-20%"
+        animate={{
+          scale: [1, 1.02, 1],
+          borderRadius: ["2rem", "2.5rem", "2rem"]
+        }}
+        transition={{
+          duration: 6,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      />
 
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -58,107 +147,13 @@ const ProductHero = () => {
               </a>
             </div>
           </div>
-
-          <div className="order-1 lg:order-2 relative reverse ">
+         
+          <div className="order-2 lg:order-2 relative  ">
             {/* Image container with border */}
             <div className="relative rounded-2xl overflow-hidden  -ml-14  ">
-              <motion.div
-        className="absolute bottom-[6.5%] right-[50%] w-25 h-25 rounded-full bg-[#C9C6C5] opacity-70"
-        animate={{ rotate: 360 }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          ease: "linear" // Constant speed rotation
-        }}
-      />
-      
-      <motion.div
-        className="absolute top-[40%] right-[6%] w-20 h-20 rounded-full bg-[#D29DAC] opacity-50"
-        animate={{ rotate: -360 }} // Rotates in opposite direction
-        transition={{
-          duration: 15,
-          repeat: Infinity,
-          ease: "linear"
-        }}
-      />
-      
-      <motion.div
-        className="absolute top-[50%] right-[5%] w-25 h-15 rounded-full bg-[#DED8E1] opacity-50"
-        animate={{ rotate: 360 }}
-        transition={{
-          duration: 25,
-          repeat: Infinity,
-          ease: "linear"
-        }}
-      />
-
-      {/* Ease-in-out animations (breathing/pulsing effect) */}
-      <motion.div
-        className="absolute top-[89%] right-[-10%] w-45 h-20 rounded-full bg-[#FFD9E3] opacity-70"
-        animate={{
-          scale: [1, 1.05, 1],
-          opacity: [0.7, 0.85, 0.7]
-        }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      
-      <motion.div
-        className="absolute top-[89%] right-[25%] w-80 h-21 rounded-full bg-[#FFECF0] opacity-50"
-        animate={{
-          scale: [1, 1.1, 1],
-          opacity: [0.5, 0.7, 0.5]
-        }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      
-      <motion.div
-        className="absolute top-[78.5%] right-[86%] w-13 h-18 rounded-full bg-[#FFECF0] opacity-60"
-        animate={{
-          y: ["0%", "-5%", "0%"],
-          opacity: [0.6, 0.8, 0.6]
-        }}
-        transition={{
-          duration: 3.5,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      
-      <motion.div
-        className="absolute top-[80%] right-[53%] w-47 h-15 rounded-full bg-[#FFDAD6] opacity-60"
-        animate={{
-          x: ["0%", "3%", "0%"],
-          opacity: [0.6, 0.9, 0.6]
-        }}
-        transition={{
-          duration: 4.5,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      
-      <motion.div
-        className="absolute top-[42%] right-[55%] w-60 h-60 rounded-[2rem] bg-[#F4F0EF] opacity-50"
-        animate={{
-          scale: [1, 1.02, 1],
-          borderRadius: ["2rem", "2.5rem", "2rem"]
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
+            
              
-              <img src={man} alt="" width={480} height={480} className='ml-20 mt-12'/>
+              <img src={man} alt=""  height={480} className='lg:ml-20 mt-13 ml-13 w-90 lg:w-100 sm:justify-center '/>
             </div>
           
 
@@ -168,8 +163,12 @@ const ProductHero = () => {
                 <path d="M12 2L14 8H20L15 12L17 18L12 14L7 18L9 12L4 8H10L12 2Z" stroke="white" strokeWidth="2" />
               </svg>
             </div>
+           <div>
+        <img src={star} alt="" width={90} height={100} className=':-ml-13 mb-7 '/>
+      </div>
           </div>
         </div>
+           
       </div>
     </div>
     </div>

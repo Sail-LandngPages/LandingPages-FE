@@ -9,6 +9,7 @@ import WhoApply from '../ProductPage/whoApply'
 import Testimony from '../ProductPage/Testimony'
 import Community from '../ProductPage/Community'
 import Faq from '../ProductPage/Faq'
+import Newsletter from './HomePage/components/Newsletter'
 
 const ProductDesign = () => {
   return (
@@ -21,7 +22,7 @@ const ProductDesign = () => {
         <ProgramDetails/>
         <Testimony/>
         <Community/>
-        <Faq/>
+        <Newsletter/>
       
     </div>
   )
