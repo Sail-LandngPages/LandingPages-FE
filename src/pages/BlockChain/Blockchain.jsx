@@ -6,6 +6,7 @@ import CardReason from './components/CardReason'
 import crypto from '../../assets/images/svg/crypto.svg'
 import btcElder from '../../assets/images/svg/btc-elder.svg'
 import wallet from '../../assets/images/svg/wallet.svg'
+import Learn from './components/Learn'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -25,7 +26,7 @@ const Blockchain = () => {
   return (
     <div className='relative overflow-hidden'>
       {/* Will add Animated background gradient */}
-      <div className="absolute top-0 left-0 w-full h-full z-[-1] bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] animate-pulse-slow"></div>
+      <div className="absolute top-0 left-0 w-full h-full z-[-1] animate-pulse-slow"></div>
 
       {/* I should add the Parallax Hero */}
       <motion.div
@@ -59,9 +60,9 @@ const Blockchain = () => {
         </motion.p>
       </motion.div>
 
-      {/* Tomorrow, ,ake sure u add each card 3D Tilt Cards with Motion */}
+      {/* Tomorrow, make sure u add each card 3D Tilt Cards with Motion */}
       <motion.div
-        className='flex justify-center items-center mt-8 gap-[65px] flex-wrap'
+        className='flex justify-center items-center mt-8 mb-12 gap-[65px] flex-wrap'
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -101,6 +102,8 @@ const Blockchain = () => {
           </Tilt>
         ))}
       </motion.div>
+
+      <Learn/>
     </div>
   )
 }
