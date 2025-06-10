@@ -28,3 +28,53 @@ body {
   font-style: normal;
 }
 
+.bold{
+  font-weight: 700;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(var(--orbit-distance)) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(var(--orbit-distance)) rotate(-360deg);
+  }
+}
+
+.spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.orbit {
+  animation: orbit 10s linear infinite;
+  transform-origin: center;
+}
+
+.orbit.reverse {
+  animation-direction: reverse;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-pulse-slow {
+  background-size: 200% 200%;
+  animation: pulse-slow 12s ease infinite;
+}
+
+

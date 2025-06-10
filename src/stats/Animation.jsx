@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 
-const Animation = ({ target, label }) => {
+const Animation = ({ target, label,unit = '+' }) => {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const Animation = ({ target, label }) => {
     <div>
             <div className="flex flex-col items-center">
       <p className="text-2xl font-medium text-black sm:text-4xl">
-        {target.toString().endsWith('%') ? `${count}%` : `${count}+`}
+        {unit === '%' ? `${count}%` : `${count}+`}
       </p>
       <p className="mt-2 text-sm font-medium text-gray-900">{label}</p>
     </div>
