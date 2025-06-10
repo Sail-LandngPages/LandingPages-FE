@@ -37,25 +37,25 @@ const SectionFour = () => {
                     Icon={CiLaptop}
                     iconColor="#274bb4"
                     bgcolor="rgba(39, 75, 180, 0.1)"
-                    title="Women in Tech"
-                    desc="Women and young frmale professionals looking
-                    to start or advance their career in the tech industry."
+                    title="Coding Enthusiasts"
+                    desc="Individuals passionate about coding and problem-solving
+                    who want to turn their interest into a profession."
                 />
                 <ApplyCard
                     Icon={PiGraduationCapThin}
                     iconColor="#20d5b9"
                     bgcolor="rgba(32, 213, 185, 0.1)"
-                    title="Women in Tech"
-                    desc="Women and young frmale professionals looking
-                    to start or advance their career in the tech industry."
+                    title="Degree Holders"
+                    desc="Those with a university degree (OND, HND, BSC) 
+                    looking to pivot their career to tech."
                 />
                 <ApplyCard
                     Icon={LuLightbulb}
                     iconColor="#274bb4"
                     bgcolor="rgba(39, 75, 180, 0.1)"
-                    title="Women in Tech"
-                    desc="Women and young frmale professionals looking
-                    to start or advance their career in the tech industry."
+                    title="Beginners Welcome"
+                    desc="No prior coding experience is required--just a 
+                    willingness to learn and grow in the field!."
                 />
             </div>
 
@@ -63,7 +63,7 @@ const SectionFour = () => {
             
                 <img src={girl} alt="" className='mt-10'  />
 
-                <div className="cards flex  lg:flex-row  gap-2  mb-4 ml-5 lg:ml-20  ">
+                <div className="cards flex  lg:flex-row  gap-2  mb-1 ml-5 lg:ml-20  ">
                 
                     <Card
                     
