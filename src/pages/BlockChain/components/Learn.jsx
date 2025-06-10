@@ -17,10 +17,10 @@ const Learn = () => {
       viewport={{ once: true }}
       variants={fadeIn}
     >
-      <div className='flex w-full justify-between items-center flex-wrap gap-6'>
+      <div className='flex w-full justify-between items-center flex-wrap gap-6 mt-22 mb-22'>
 
         {/* Left Section */}
-        <motion.div variants={fadeIn} className='max-w-[600px]'>
+        <motion.div variants={fadeIn} className='max-w-[600px] '>
           <TypeAnimation
             sequence={[
               'Program Highlights',
@@ -28,7 +28,7 @@ const Learn = () => {
             ]}
             wrapper="p"
             cursor={false}
-            className='text-center bg-[#FBB404] rounded-full text-[15px] px-2 text-white raleway w-[200px]'
+            className='text-center bg-[#FBB404] rounded-full text-[15px] px-2 text-white raleway w-[200px] '
             speed={35}
             omitDeletionAnimation
             repeat={0}

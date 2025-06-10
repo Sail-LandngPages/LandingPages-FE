@@ -7,6 +7,7 @@ import crypto from '../../assets/images/svg/crypto.svg'
 import btcElder from '../../assets/images/svg/btc-elder.svg'
 import wallet from '../../assets/images/svg/wallet.svg'
 import Learn from './components/Learn'
+import LearnCard from './components/LearnCard'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -46,14 +47,14 @@ const Blockchain = () => {
         viewport={{ once: true }}
       >
         <motion.p
-          className='raleway text-[48px] font-medium w-[50%]'
+          className='raleway text-[48px] font-medium w-[50%] text-black'
           variants={fadeInUp}
         >
           Why Learn Blockchain Development?
         </motion.p>
 
         <motion.p
-          className='w-[400px]'
+          className='w-[400px] text-[#5D5D5D]'
           variants={fadeInUp}
         >
           Learn blockchain development to gain in-demand skills, unlock global opportunities, and build secure, decentralized applications shaping the future of tech.
@@ -104,6 +105,8 @@ const Blockchain = () => {
       </motion.div>
 
       <Learn/>
+
+      <LearnCard number={"1."} title={"FUNDAMENTALS OF BLOCKCHAIN TECHNOLOGY"} text={"Understand how blockchain works, from decentralized ledgers to consensus mechanisms, and explore the core concepts that power secure and transparent digital networks."}/>
     </div>
   )
 }
