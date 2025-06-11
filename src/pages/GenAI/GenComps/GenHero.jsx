@@ -11,7 +11,7 @@ import ArrowDown from "../../../assets/GenAI-assets/arrowDown.svg";
 
 import IconProps from "../Reuseables/IconProps";
 import Button from "../Reuseables/Button";
-import FloatingCircles from "../Reuseables/floatingcircles";
+import FloatingCircles from "../Reuseables/Floatingcircles";
 
 import { MdAccessTime } from "react-icons/md";
 import { SlPeople } from "react-icons/sl";
@@ -26,8 +26,9 @@ const GRADIENT_STYLE = {
 
 const GenHero = () => {
   return (
-    <section className="bg-[linear-gradient(135deg,_#0f172a_0%,_#312e81_50%,_#164e63_100%)]  w-full py-[10px] min-h-[calc(100vh-80px)] relative flex items-center justify-center overflow-hidden font-inter ">
+    <section className="bg-[linear-gradient(135deg,_#0f172a_0%,_#312e81_50%,_#164e63_100%)]  w-full py-[15px] min-h-[calc(100vh-80px)] relative flex items-center justify-center overflow-hidden font-inter ">
       <FloatingCircles />
+
       <div className="flex flex-col w-full justify-around h-full absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <div className="flex justify-between items-center m-15">
           <img src={gb1} alt="" className="w-[160px]" />
@@ -55,9 +56,10 @@ const GenHero = () => {
           <IconProps
             img={Plane}
             text="Welcome to the Future"
-            className="w-[246px] py-2 px-6 h-[41.33px] "
+            className="w-[246px] py-2 px-6 h-[41.33px] bg-white/20"
           />
         </div>
+
         <div className="flex flex-col items-center mt-4 space-y-4">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-center text-white leading-tight max-w-4xl">
             <span
@@ -69,9 +71,11 @@ const GenHero = () => {
             <br />
             at SAIL Innovation Lab
           </h1>
+
           <h3 className="text-[#CFFAFE] text-center w-[318px] md:w-[545.3px] ">
             Explore the possibilities. Build the unimaginable.
           </h3>
+
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
             <Button
               icon={<IoPlayOutline />}
@@ -86,21 +90,22 @@ const GenHero = () => {
               className="w-[288px] bg-white text-[#4F46E5] border-2"
             />
           </div>
+
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-4">
             <IconProps
               icon={<MdAccessTime />}
               text="4 Weeks Program"
-              className="w-[174.33px] h-[37.33px] py-[16.67px] px-[8.67px] "
+              className="w-[174.33px] h-[37.33px] py-[16.67px] px-[8.67px] bg-white/20"
             />
             <IconProps
               icon={<SlPeople />}
               text="50 Scholarship Slots"
-              className="w-[193.33px] h-[37.33px] py-[16.67px] px-[8.67px] "
+              className="w-[193.33px] h-[37.33px] py-[16.67px] px-[8.67px] bg-white/20 "
             />
             <IconProps
               icon={<LiaCertificateSolid />}
               text="Certificate Included"
-              className="w-[188.33px] h-[37.33px] py-[16.67px] px-[8.67px] "
+              className="w-[188.33px] h-[37.33px] py-[16.67px] px-[8.67px] bg-white/20"
             />
           </div>
         </div>

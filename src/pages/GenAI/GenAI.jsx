@@ -1,8 +1,10 @@
-import Hero from "./GenComps/GenHero";
+import Engine from "./GenComps/Engine";
+import GenHero from "./GenComps/GenHero";
 
 const GenAI = () => {
     return ( <div>
-        <Hero/>
+        <GenHero/>
+        <Engine/>
 
     </div> );
 }
