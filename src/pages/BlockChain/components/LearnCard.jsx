@@ -6,13 +6,13 @@ const LearnCard = ({ number, title, text, hoverImage }) => {
   const timeoutRef = useRef(null);
 
   const handleMouseEnter = () => {
-    // Clear any pending timeout to hide
+   
     clearTimeout(timeoutRef.current);
     setIsHovered(true);
   };
 
   const handleMouseLeave = () => {
-    // Set timeout to hide the image after 1 second
+ 
     timeoutRef.current = setTimeout(() => {
       setIsHovered(false);
     }, 2000);
