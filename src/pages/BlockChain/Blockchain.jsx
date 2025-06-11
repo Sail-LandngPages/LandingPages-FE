@@ -8,6 +8,12 @@ import btcElder from '../../assets/images/svg/btc-elder.svg'
 import wallet from '../../assets/images/svg/wallet.svg'
 import Learn from './components/Learn'
 import LearnCard from './components/LearnCard'
+import previewImg from "../../assets/images/svg/previewImage.svg"
+import previewImg2 from "../../assets/images/svg/previewImage2.svg"
+import previewImg3 from "../../assets/images/svg/previewImage3.svg"
+import previewImg4 from "../../assets/images/svg/previewImage4.svg"
+import previewImg5 from "../../assets/images/svg/previewImage5.svg"
+
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -106,7 +112,11 @@ const Blockchain = () => {
 
       <Learn/>
 
-      <LearnCard number={"1."} title={"FUNDAMENTALS OF BLOCKCHAIN TECHNOLOGY"} text={"Understand how blockchain works, from decentralized ledgers to consensus mechanisms, and explore the core concepts that power secure and transparent digital networks."}/>
+      <LearnCard number={"1."} title={"FUNDAMENTALS OF BLOCKCHAIN TECHNOLOGY"} text={"Understand how blockchain works, from decentralized ledgers to consensus mechanisms, and explore the core concepts that power secure and transparent digital networks."} hoverImage={previewImg}/>
+      <LearnCard number={"2."} title={"SMART CONTRACTS (SOLIDITY, ETHEREUM)"} text={"Learn to write smart contracts using Solidity on the Ethereum network, and build self-executing agreements that enable trustless, automated transactions."} hoverImage={previewImg2}/>
+      <LearnCard number={"3."} title={"WEB3 INTEGRATION & D.APP DEVELOPMENT"} text={"Learn to connect with Web3 technologies and build decentralized apps that are secure and easy for users. Practice creating projects that let you explore blockchain features and bring ideas to life."}hoverImage={previewImg3}/>
+      <LearnCard number={"4."} title={"BLOCKCHAINN SECURITY PRINCIPLES"} text={"Develop practical expertise by working on real-world blockchain security projects, applying core principles to tackle challenges and demonstrate your knowledge and problem-solving skills."} hoverImage={previewImg4}/>
+      <LearnCard number={"5."} title={"REAL-WORLD PROJECT EXPERIENCE"} text={"Gain hands-on experience by building real-world blockchain projects, applying your skills to solve practical challenges and showcase your expertise and creativity."} hoverImage={previewImg5}/>
     </div>
   )
 }
