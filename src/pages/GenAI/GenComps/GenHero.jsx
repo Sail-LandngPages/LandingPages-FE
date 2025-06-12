@@ -11,7 +11,7 @@ import ArrowDown from "../../../assets/GenAI-assets/arrowDown.svg";
 
 import IconProps from "../Reuseables/IconProps";
 import Button from "../Reuseables/Button";
-import FloatingCircles from "../Reuseables/Floatingcircles";
+import FloatingCircles from "../Reuseables/floatingcircles";
 
 import { MdAccessTime } from "react-icons/md";
 import { SlPeople } from "react-icons/sl";
