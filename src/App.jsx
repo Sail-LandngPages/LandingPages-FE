@@ -14,7 +14,7 @@ import GenAI from "./pages/GenAI/GenAI"
 function App() {
   return(
     <>
-      {/* <Homepage/> */}
+     
 
       
 
