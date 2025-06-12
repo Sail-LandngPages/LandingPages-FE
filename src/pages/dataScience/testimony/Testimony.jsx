@@ -4,9 +4,9 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion"; 
-import left from '../../../../public/Left.png'
-import right from '../../../../public/Right.png'
-import quoteIcon from "../../../../public/testimonialImg.png"; 
+import left from '/Left.png'
+import right from '/Right.png'
+import quoteIcon from "/testimonialImg.png"; 
 import "./Testimony.css"; 
 
 const testimonials = [
@@ -49,11 +49,14 @@ const TestimonialCard = ({ testimonial }) => (
       className="testimonial-card"
       style={{
         boxShadow: "2px 0 20px rgba(0, 0, 0, 0.03)",
+        // backgroundColor:'pink'
       }}
+      
+                  
     >
       {/* Quote Icon Box */}
-      <div className="quote-icon-box-wrapper">
-        <div className="relative"> 
+      <div className="quote-icon-box-wrapper" >
+        <div className="relative" style={{width:'100px',height:'100px',backgroundColor:'transparent'}}> 
               <img
                 src={quoteIcon}
                 alt="quote"
@@ -171,10 +174,11 @@ const Testimonial = () => {
                 <img src={left} alt=''/> 
             </motion.button>
           </motion.div>
-
           <div className="testimonial-cards-overflow">
+            
             <motion.div
-              className="testimonial-cards-inner"
+              className="testimonial-cards-inner" 
+              // style={{backgroundColor:'red'}}
               animate={{
                 x: -currentIndex * (cardWidth + cardGap),
               }}
@@ -183,6 +187,7 @@ const Testimonial = () => {
                 ease: "easeInOut",
               }}
             >
+              
               {testimonials.map((testimonial) => (
                 <TestimonialCard
                   key={testimonial.id}
