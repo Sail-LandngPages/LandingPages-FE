@@ -12,8 +12,8 @@ const GameDev = () => {
         <>
             <GameHero/>
             <Unlock/>
-            <MissionBriefing/>
             <SkillTree/>
+            <MissionBriefing/>
             <PlayerReviews/>
             <HelpCenter/>
             <Join/>
