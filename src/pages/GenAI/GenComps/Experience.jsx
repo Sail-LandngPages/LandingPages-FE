@@ -31,7 +31,7 @@ const Experience = () => {
     {
       icon: GoGift,
       title: "Bonus",
-      description: "Access to exclusive AI tools & mentor suupport",
+      description: "Access to exclusive AI tools & mentor support",
       iconColor: "bg-gradient-to-r from-[#2563EB] to-[#0891B2]",
     },
   ];

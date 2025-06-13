@@ -21,17 +21,17 @@ const ExpertCard = ({ personName, title, description, iconColor }) => (
     <div className="flex justify-center items-center gap-3">
       <div>
           <div className="w-8 h-1 rounded-md bg-gradient-to-r from-[#818CF8] to-[#60A5FA]"></div>
-          <p className="text-[#6B7280] font-sm">AI</p>
+          <p className="text-[#6B7280] font-sm text-center">AI</p>
       </div>
 
       <div>
           <div className="w-8 h-1 rounded-md bg-gradient-to-r from-[#22D3EE] to-[#34D399]"></div>
-          <p className="text-[#6B7280] font-sm">ML</p>
+          <p className="text-[#6B7280] font-sm text-center">ML</p>
       </div>
 
       <div>
           <div className="w-8 h-1 rounded-md bg-gradient-to-r from-[#34D399] to-[#818CF8]"></div>
-          <p className="text-[#6B7280] font-sm">Gen</p>
+          <p className="text-[#6B7280] font-sm text-center">Gen</p>
       </div>
       
     </div>

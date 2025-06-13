@@ -1,3 +1,4 @@
+import Build from "./GenComps/Build";
 import Curriculum from "./GenComps/Curriculum";
 import Design from "./GenComps/Design";
 import Engine from "./GenComps/Engine";
@@ -5,6 +6,7 @@ import Experience from "./GenComps/Experience";
 import Expert from "./GenComps/Expert";
 import GenHero from "./GenComps/GenHero";
 import Shape from "./GenComps/Shape";
+import WhyLearn from "./GenComps/WhyLearn";
 
 const GenAI = () => {
     return ( <div>
@@ -15,6 +17,8 @@ const GenAI = () => {
         <Curriculum/>
         <Experience/>
         <Expert/>
+        <Build/>
+        <WhyLearn/>
 
     </div> );
 }

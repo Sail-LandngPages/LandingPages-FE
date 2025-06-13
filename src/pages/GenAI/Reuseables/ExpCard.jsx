@@ -1,7 +1,6 @@
 
-const ExpCard = ({ icon: Icon, title, description, iconColor }) => (
-  <div className="relative flex flex-col justify-evenly items-center w-[342px] h-[221.33px] lg:w-[240px] lg:h-[270px] p-6 rounded-lg font-inter shadow-sm border border-gray-100 hover:shadow-lg transition-shadow ">
-    
+const ExpCard = ({ icon: Icon, title, description, iconColor, className = "" }) => (
+  <div className={`relative flex flex-col justify-evenly items-center w-[342px] h-[221.33px] lg:w-[240px] lg:h-[270px] p-6 rounded-lg font-inter shadow-sm border border-gray-100 hover:shadow-lg transition-shadow ${className}`}>
     <div
       className={`w-6 h-12 ${iconColor} rounded-lg flex items-center justify-center mb-4`}
     >

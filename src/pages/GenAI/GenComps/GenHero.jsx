@@ -86,13 +86,13 @@ const GenHero = () => {
               icon={<IoPlayOutline />}
               text="Start Your Journey"
               href="#"
-    className="w-[260px] bg-gradient-to-r from-[#4F46E5] to-[#2563EB] text-white shadow-md transition duration-300 hover:shadow-blue-400/60 hover:shadow-lg hover:scale-105"
+              className="w-[260px] bg-gradient-to-r from-[#4F46E5] to-[#2563EB] text-white shadow-md transition duration-300 hover:shadow-blue-400/60 hover:shadow-lg hover:scale-105"
             />
             <Button
               icon={<BsDownload />}
               text="Download Curriculum"
               href="#"
-    className="w-[288px] bg-white text-[#4F46E5] border-2 border-[#4F46E5] shadow-md transition duration-300 hover:shadow-indigo-300 hover:shadow-lg hover:scale-105"
+              className="w-[288px] bg-white text-[#4F46E5] border-2 border-[#4F46E5] shadow-md transition duration-300 hover:shadow-indigo-300 hover:shadow-lg hover:scale-105"
             />
           </div>
 
@@ -120,7 +120,7 @@ const GenHero = () => {
         </div>
       </main>
 
-        <style>
+      <style>
         {`
           @keyframes gradientMove {
             0% { background-position: 0% 50%; }
