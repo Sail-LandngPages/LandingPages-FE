@@ -1,5 +1,9 @@
 import { LuLoaderPinwheel } from "react-icons/lu";
-import { IoBookOutline, IoMusicalNotes, IoBusinessSharp } from "react-icons/io5";
+import {
+  IoBookOutline,
+  IoMusicalNotes,
+  IoBusinessSharp,
+} from "react-icons/io5";
 import { RiToolsFill } from "react-icons/ri";
 
 import IconProps from "../Reuseables/IconProps";
@@ -41,17 +45,20 @@ const Build = () => {
           text="Final Capstone Project"
           className=" text-indigo-600 bg-gradient-to-r from-[#E0E7FF] to-[#CFFAFE] w-[245px] h-[40px] border-none mt-8"
         />
+
         <h3 className="text-4xl md:text-5xl font-bold max-w-[85%] leading-tight text-left">
           Build Something{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6E50F7] to-[#3C83F6]">
             Amazing
           </span>
         </h3>
+
         <p className="max-w-[85%] text-[20px] text-left">
           Participants will work in teams or individually to build and present a
           generative AI-powered project — from an AI comic strip to a music
           generator, or even an AI startup idea.
         </p>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
           {features.map((feature, index) => (
             <ExpCard
@@ -60,6 +67,7 @@ const Build = () => {
               title={feature.title}
               description={feature.description}
               iconColor={feature.iconColor}
+              className="shadow-sm border border-gray-100 hover:shadow-lg transition-shadow"
             />
           ))}
         </div>

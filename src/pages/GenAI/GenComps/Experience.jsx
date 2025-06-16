@@ -58,6 +58,7 @@ const Experience = () => {
             title={feature.title}
             description={feature.description}
             iconColor={feature.iconColor}
+            className="shadow-sm border border-gray-100 hover:shadow-lg transition-shadow hover:bg-gradient-to-r from-[#E0E7FF] to-[#CFFAFE]"
           />
         ))}
       </div>
