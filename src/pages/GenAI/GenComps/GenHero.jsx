@@ -11,7 +11,7 @@ import ArrowDown from "../../../assets/GenAI-assets/arrowDown.svg";
 
 import IconProps from "../Reuseables/IconProps";
 import Button from "../Reuseables/Button";
-import FloatingCircles from "../Reuseables/Floatingcircles";
+import FloatingCircles from "../Reuseables/floatingcircles";
 
 import { MdAccessTime } from "react-icons/md";
 import { SlPeople } from "react-icons/sl";
@@ -22,6 +22,11 @@ import { BsDownload } from "react-icons/bs";
 const GRADIENT_STYLE = {
   backgroundImage:
     "linear-gradient(to right, #667EEA 0%, #764BA2 25%, #f093FB 50%, #F5576C 75%, #4FACFE 100%)",
+  backgroundSize: "200% 200%",
+  backgroundClip: "text",
+  WebkitBackgroundClip: "text",
+  color: "transparent",
+  animation: "gradientMove 3s ease infinite",
 };
 
 const GenHero = () => {
@@ -81,13 +86,13 @@ const GenHero = () => {
               icon={<IoPlayOutline />}
               text="Start Your Journey"
               href="#"
-              className="w-[260px] bg-gradient-to-r from-[#4F46E5] to-[#2563EB] text-white"
+              className="w-[260px] bg-gradient-to-r from-[#4F46E5] to-[#2563EB] text-white shadow-md transition duration-300 hover:shadow-blue-400/60 hover:shadow-lg hover:scale-105"
             />
             <Button
               icon={<BsDownload />}
               text="Download Curriculum"
               href="#"
-              className="w-[288px] bg-white text-[#4F46E5] border-2"
+              className="w-[288px] bg-white text-[#4F46E5] border-2 border-[#4F46E5] shadow-md transition duration-300 hover:shadow-indigo-300 hover:shadow-lg hover:scale-105"
             />
           </div>
 
@@ -114,6 +119,16 @@ const GenHero = () => {
           <img src={ArrowDown} alt="" className="animate-bounce" />
         </div>
       </main>
+
+      <style>
+        {`
+          @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        `}
+      </style>
     </section>
   );
 };
