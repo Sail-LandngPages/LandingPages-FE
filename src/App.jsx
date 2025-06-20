@@ -9,6 +9,7 @@ import Footer from "./static/Footer"
 import GameDev from "./pages/GameDev/GameDev"
 import Blockchain from "./pages/BlockChain/Blockchain"
 import GenAI from "./pages/GenAI/GenAI"
+import Backend from "./pages/BackendP/Backend"
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/gameDev" element={<GameDev/>}/>
         <Route path="/blockChain" element={<Blockchain/>}/>
         <Route path="/generativeAI" element={<GenAI/>}/>
+        <Route path="/backend" element={<Backend/>}/>
         
       </Routes>
       <Footer/>
