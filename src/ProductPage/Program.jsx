@@ -7,6 +7,7 @@ import pix from "../assets/images/pix.png"
 import frame1 from "../assets/images/fram.png"
 import framer from "../assets/images/framer.png"
 import Stats from '../stats/Stats';
+import { motion } from "framer-motion";
 const benefits = [
   {
     title: "Practical Learning",
@@ -49,8 +50,21 @@ const Program = () => {
     <div  >
          <section className="max-w-7xl mx-auto px-4 py-12 bg-[#ffff] "  data-aos="fade-up">
           <div className='h-22  overflow-hidden'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FAFAFA" fill-opacity="1" d="M0,256L120,213.3C240,171,480,85,720,53.3C960,21,1200,43,1320,53.3L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg></div>
-          
+           <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5 }}
+                      viewport={{ once: true }}
+                      className="relative"
+                    >
+           {" "}
       {/* Header */}
+          <motion.div
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: true }}
+                      className="absolute -bottom-4 right-0 transform translate-x-[20%]"
+                    ></motion.div>
       <header className="mb-8 space-y-4 lg:ml-10">
          
 
@@ -72,6 +86,7 @@ const Program = () => {
           Benefits
         </span>
         </button>
+     
         <h2 className="text-3xl font-bold text-gray-900">Why Join This Program?</h2>
         <p className="text-gray-600 max-w-lg">
           Our program is designed to provide the hands‑on experience needed to enter the professional field. We focus on
@@ -80,7 +95,7 @@ const Program = () => {
       </header>
 
       {/* Content */}
-      <div className="grid md:grid-cols-2 gap-10 items-start lg:ml-10 ">
+      <div className="grid md:grid-cols-2 gap-10 items-start lg:ml-10  ">
         {/* Image */}
         <figure className="relative">
           {/* <img src={framer} alt="" width={60} className='-mb-12 opacity-50 -ml-5'/> */}
@@ -90,7 +105,7 @@ const Program = () => {
         </figure>
 
         {/* Benefits list */}
-       <ul className="space-y-12 order-1">
+       <ul className="space-y-12  ">
   {benefits.map(({ title, description, icon }) => (
     <li key={title} className="flex gap-4">
       <div className="w-10 h-10 bg-[#133C8A] rounded-lg flex items-center justify-center text-white flex-shrink-0">
@@ -110,10 +125,14 @@ const Program = () => {
        
         <Stats/>
       </div>
+      </motion.div>{""}
       {/* <div className='overflow-hidden -mt-50'> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FAFAFA" fill-opacity="1" d="M0,256L80,261.3C160,267,320,277,480,282.7C640,288,800,288,960,250.7C1120,213,1280,139,1360,101.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg></div> */}
     </section>
+    
     <div className='overflow-hidden lg:-mt-50 -mt-40'> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FAFAFA" fill-opacity="1" d="M0,256L80,261.3C160,267,320,277,480,282.7C640,288,800,288,960,250.7C1120,213,1280,139,1360,101.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg></div>
+    
     </div>
+    
   )
 }
 

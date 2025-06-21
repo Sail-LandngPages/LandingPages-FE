@@ -1,100 +1,14 @@
 import React from 'react'
-import man from '../assets/images/designing.png'
+import man from '../assets/images/Artman.png'
 import star from '../assets/images/star.png'
 import { motion } from "framer-motion";
 
 const ProductHero = () => {
   return (
     <div>
-        <div className="min-h-screen bg-[#FAFAFA] p-4 md:p-8 lg:p-16 relative overflow-hidden">
+        <div className=" bg-[#FAFAFA] p-4 md:p-8 lg:p-16 relative overflow-hidden">
         
       
-      
-      <motion.div
-        className="absolute lg:top-[40%] lg:right-[12%] w-20 h-20 rounded-full bg-[#D29DAC] opacity-50 bottom-[29%] right-[8%] md:right-[20%] md:top-[58%]"
-        animate={{ rotate: -360 }} // Rotates in opposite direction
-        transition={{
-          duration: 15,
-          repeat: Infinity,
-          ease: "linear"
-        }}
-      />
-      
-      <motion.div
-        className="absolute lg:top-[50%] lg:right-[13%] w-25 h-15 rounded-full bg-[#DED8E1] opacity-50 bottom-[20%] right-[6%] md:right-[20%] md:top-[65%]"
-        animate={{ rotate: 360 }}
-        transition={{
-          duration: 25,
-          repeat: Infinity,
-          ease: "linear"
-        }}
-      />
-
-      {/* Ease-in-out animations (breathing/pulsing effect) */}
-      <motion.div
-        className="absolute lg:top-[76%] lg:right-[9%] w-45 h-20 md:top-[85%] md:right-[25%] rounded-full bg-[#FFD9E3] opacity-70 bottom-14 right-[15%]"
-        animate={{
-          scale: [1, 1.05, 1],
-          opacity: [0.7, 0.85, 0.7]
-        }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      
-      <motion.div
-        className="absolute lg:top-[77%] lg:right-[24%] md:top-[86%] md:left-[18%] w-67 h-19 rounded-full bg-[#FFECF0] opacity-50 bottom-14 "
-        animate={{
-          scale: [1, 1.1, 1],
-          opacity: [0.5, 0.7, 0.5]
-        }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      
-      <motion.div
-        className="absolute lg:top-[70%] lg:right-[49.6%] md:left-[10%] md:bottom-[15%] w-14 h-16 rounded-full bg-[#FFECF0] opacity-60 bottom-40 "
-        animate={{
-          y: ["0%", "-5%", "0%"],
-          opacity: [0.6, 0.8, 0.6]
-        }}
-        transition={{
-          duration: 3.5,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      
-      <motion.div
-        className="absolute lg:top-[70%] lg:right-[35%] md:right-[60%] md:top-[80%] w-47 h-15 rounded-full bg-[#FFDAD6] opacity-60 bottom-[14%] right-[39%]"
-        animate={{
-          x: ["0%", "3%", "0%"],
-          opacity: [0.6, 0.9, 0.6]
-        }}
-        transition={{
-          duration: 4.5,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      
-      <motion.div
-        className="absolute lg:top-[37%] lg:right-[38%] w-55 h-55 rounded-[2rem] bg-[#F4F0EF] opacity-50 bottom-[23%] right-20%"
-        animate={{
-          scale: [1, 1.02, 1],
-          borderRadius: ["2rem", "2.5rem", "2rem"]
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
 
       <div className="max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -113,7 +27,7 @@ const ProductHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            <button className="bg-[#FBB404] text-white px-4 py-2 rounded-full flex items-center hover:bg-[#133C8A]">
+            <button className=" ml-8 lg:ml-0 md:ml-54  bg-[#FBB404] text-white px-4 py-2 rounded-full flex items-center hover:bg-[#133C8A]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 mr-2"
@@ -132,7 +46,7 @@ const ProductHero = () => {
 
           {/* Heading */}
           <motion.h1
-            className="text-5xl md:text-6xl font-bold mb-6 tracking-tight"
+            className="lg:text-5xl text-3xl md:text-4xl md:text-center font-bold mb-6 tracking-tight  sm:text-center lg:text-left"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.7 }}
@@ -142,7 +56,7 @@ const ProductHero = () => {
 
           {/* Description */}
           <motion.p
-            className="text-gray-600 mb-10 leading-relaxed justify-center opacity-70"
+            className="text-gray-600 mb-10 md:text-center lg:text-left leading-relaxed text-center sm:text-justify opacity-70 text-sm"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.6 }}
@@ -155,7 +69,7 @@ const ProductHero = () => {
 
           {/* Buttons */}
           <motion.div
-            className="flex flex-wrap gap-4"
+            className="flex flex-wrap gap-4 lg:items-start lg:-ml-64 justify-center sm:justify-start md:items-center md:justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9, duration: 0.5 }}
@@ -182,12 +96,12 @@ const ProductHero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <div className="relative rounded-2xl overflow-hidden -ml-14 ">
+          <div className="relative rounded-2xl overflow-hidden lg:-ml-14 ">
             <img
               src={man}
               alt="Product Designer"
               height={480}
-              className="lg:ml-20 mt-13 ml-9  lg:w-100 sm:justify-center md:justify-center md:ml-35"
+              className="lg:ml-20 lg:mt-13   lg:w-100 sm:justify-center md:justify-center md:ml-35"
             />
           </div>
         </motion.div>
