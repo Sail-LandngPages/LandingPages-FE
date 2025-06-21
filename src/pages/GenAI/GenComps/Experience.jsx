@@ -36,7 +36,7 @@ const Experience = () => {
     },
   ];
   return (
-    <section className="w-full p-8 font-inter flex flex-col items-center justify-center my-8 gap-4 bg-[#F8FAFC] ">
+    <section className="w-full p-8 font-inter flex flex-col items-center justify-center my-8 gap-4 bg-[#F8FAFC] overflow-hidden">
       <IconProps
         icon={<MdOutlineSettings />}
         text="Program Format"

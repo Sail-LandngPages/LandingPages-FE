@@ -38,7 +38,7 @@ const Build = () => {
     },
   ];
   return (
-    <section className=" w-full p-8 font-inter flex flex-col lg:flex-row items-center justify-evenly bg-[#F8FAFC] my-8  ">
+    <section className=" w-full p-8 font-inter flex flex-col lg:flex-row items-center justify-evenly bg-[#F8FAFC] my-8 overflow-hidden ">
       <div className="flex flex-col items-center lg:items-start justify-center gap-4 w-full lg:max-w-[50%]">
         <IconProps
           icon={<LuLoaderPinwheel />}

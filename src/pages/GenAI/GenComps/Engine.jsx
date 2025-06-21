@@ -18,7 +18,7 @@ const textVariant = {
 
 const Engine = () => {
   return (
-    <section className="w-full py-4 font-inter flex flex-col items-center justify-center my-8 gap-4 bg-[linear-gradient(to_right,_#00FF4100_0%,_#00FF4108_50%,_#00FF4100_100%)]">
+    <section className="w-full py-4 font-inter flex flex-col items-center justify-center my-8 gap-4 bg-[linear-gradient(to_right,_#00FF4100_0%,_#00FF4108_50%,_#00FF4100_100%)] overflow-hidden">
       <IconProps
         icon={<MdStarOutline />}
         text="What is Generative AI?"

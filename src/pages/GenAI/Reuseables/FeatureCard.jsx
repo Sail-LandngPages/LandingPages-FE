@@ -25,7 +25,7 @@ const FeatureCard = ({ icon: Icon, title, description, iconColor }) => (
       <div
         className={`w-6 h-12 ${iconColor} rounded-lg flex items-center justify-center mb-4`}
       >
-        <Icon className="w-6 h-6 text-white" />
+        <Icon className="w-6 h-6 text-white transform transition-transform duration-500 group-hover:rotate-y-180" />
       </div>
 
       <h3 className="text-lg font-semibold text-[#1E293B] mb-2">{title}</h3>

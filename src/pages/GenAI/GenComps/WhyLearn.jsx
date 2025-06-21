@@ -47,7 +47,7 @@ const WhyLearn = () => {
   ];
 
   return (
-    <section className="w-full p-8 font-inter flex flex-col items-center justify-center my-8 gap-4">
+    <section className="w-full p-8 font-inter flex flex-col items-center justify-center my-8 gap-4 overflow-hidden">
       <IconProps
         icon={<TfiWorld />}
         text="Why Learn at SAIL?"

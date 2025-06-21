@@ -9,7 +9,7 @@ const Project = () => {
   ];
 
   return (
-      <div className="w-[327.33px] h-[385.33px] lg:w-[456px] p-6 bg-white rounded-lg shadow-lg">
+      <div className="w-[327.33px] h-[385.33px] lg:w-[456px] p-6 bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="p-6 ">
           <div className="flex items-start space-x-4">
             <div className="bg-blue-600 rounded-lg w-6 h-12 flex items-center justify-center">

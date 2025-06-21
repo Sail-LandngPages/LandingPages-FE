@@ -15,7 +15,7 @@ const Curriculum = () => {
   }, []);
 
   return (
-    <section className="w-full py-8 font-inter flex flex-col items-center justify-center my-8 gap-4">
+    <section className="w-full py-8 font-inter flex flex-col items-center justify-center my-8 gap-4 overflow-hidden">
       <IconProps
         icon={<LuBrain />}
         text="What You'll Learn"
@@ -57,9 +57,9 @@ const Curriculum = () => {
         <div
           data-aos="fade-up"
           data-aos-delay="300"
-          className="bg-[linear-gradient(to_top_right,_#6366F11A_0%,_#22C55E1A_25%,_#06B6D41A_50%,_#A855F71A_75%,_#6366F11A_100%)] w-[342px] h-[316px] md:w-[720px] lg:w-[304px] flex items-center justify-evenly rounded-lg"
+          className="bg-[linear-gradient(to_top_right,_#6366F11A_0%,_#22C55E1A_25%,_#06B6D41A_50%,_#A855F71A_75%,_#6366F11A_100%)] w-[342px] h-[316px] md:w-[720px] lg:w-[304px] flex items-center justify-evenly rounded-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:rounded-2xl overflow-hidden group"
         >
-          <img src={dots} alt="Decorative Dots" className="w-32 h-32" />
+          <img src={dots} alt="Decorative Dots" className="w-32 h-32 animate-pulse" />
         </div>
 
         <div className="flex flex-col gap-4 lg:w-[300px]">
