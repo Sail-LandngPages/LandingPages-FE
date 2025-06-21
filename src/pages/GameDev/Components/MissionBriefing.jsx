@@ -72,11 +72,8 @@ import c1 from '../../../assets/gamedev-assets/c1.svg';
 import c2 from '../../../assets/gamedev-assets/c2.svg';
 import c3 from '../../../assets/gamedev-assets/c3.svg';
 import c4 from '../../../assets/gamedev-assets/c4.svg';
-import c5 from '../../../assets/gamedev-assets/c5.svg';
 import c6 from '../../../assets/gamedev-assets/c6.svg';
 
-const MissionBriefing = () => {
-    
 const cards = [
   { id: 1, image: c1, title: "START DATE", text: "To be communicated." },
   { id: 2, image: c2, title: "DURATION", text: "3 Months" },
@@ -84,60 +81,76 @@ const cards = [
   { id: 4, image: c6, title: "COST", text: "Fully Funded (Limited Slots)" },
 ];
 
-  return (
-    <div className='bg-[#141A28] w-full flex justify-center p-[60px] items-center 2xl:p-[60px] xl:p-[50px] lg:p-[40px] md:p-[30px] sm:p-[20px]'>       
-        <div className='border-3 p-[20px] w-[1280px] border-[#FBAD04] flex flex-col justify-center items-center rounded-lg 2xl:w-[1280px] 2xl:p-[20px] xl:w-[1100px] xl:p-[18px] lg:w-[900px] lg:p-[16px] md:w-[700px] md:p-[14px] sm:w-[300px] sm:p-[10px] xs:w-[300px] xs:p-[10px]'>           
-            <div className='border-b-1 border-[#374151] w-full flex justify-evenly items-center p-[10px] flex-wrap gap-2 2xl:flex-nowrap xl:flex-nowrap lg:flex-nowrap md:flex-wrap sm:flex-wrap sm:justify-center'>               
-                <div className='flex justify-center items-center gap-[10px] 2xl:gap-[10px] xl:gap-[8px] lg:gap-[6px] md:gap-[5px] sm:gap-[4px]'>
-                    <img src={missionImg} alt="Mission Briefing" className='w-[10px] 2xl:w-[10px] xl:w-[9px] lg:w-[8px] md:w-[7px] sm:w-[6px]'/>
-                    <h1 className='text-white font-[orbitron] font-bold 2xl:text-base xl:text-sm lg:text-sm md:text-xs sm:text-xs'>MISSION <span className='text-[#FBAD04]'>BRIEFING</span></h1>
-                </div>
-                
-                <div className='rounded-lg bg-[#374151] text-[12px] w-[160px] h-[25px] flex justify-center items-center 2xl:w-[160px] 2xl:h-[25px] 2xl:text-[12px] xl:w-[140px] xl:h-[22px] xl:text-[11px] lg:w-[130px] lg:h-[20px] lg:text-[10px] md:w-[120px] md:h-[18px] md:text-[9px] sm:w-[140px] sm:h-[20px] sm:text-[9px]'>
-                    <p className='text-[#FBAD04] font-[orbitron]'>MISSION ID: GO 2025</p>
-                </div>
-            </div>
-
-            <div className='w-full flex items-start justify-between p-[20px] flex-wrap gap-6 2xl:flex-nowrap 2xl:p-[20px] xl:flex-nowrap xl:p-[18px] lg:flex-wrap lg:p-[16px] lg:justify-center md:flex-wrap md:p-[14px] md:justify-center sm:flex-wrap sm:p-[12px] sm:justify-center'>               
-                <div className='flex flex-col justify-center items-start flex-1 min-w-0 2xl:min-w-0 xl:min-w-0 lg:w-full md:w-full sm:w-full'>                   
-                    <p className='text-[#61B8A8] text-left text-[12px] font-[orbitron] ml-6 mb-4 2xl:text-[12px] 2xl:ml-6 xl:text-[11px] xl:ml-5 lg:text-[10px] lg:text-left lg:ml-0 md:text-[9px] md:ml-0 md:text-left sm:text-[8px] sm:ml-0 sm:text-left'>EVERYTHING YOU NEED TOO KNOW ABOUT YOUR GAME DEV JOURNEY</p>                 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 w-full 2xl:grid-cols-2 2xl:gap-6 2xl:p-6 xl:grid-cols-2 xl:gap-5 xl:p-5 lg:grid-cols-2 lg:gap-4 lg:p-4 md:gap-3 md:p-3 sm:grid-cols-1 sm:gap-2 sm:p-2">                       
-                        {cards.map((card) => (
-                        <div key={card.id} className="w-full max-w-[350px] bg-[#2A3443] shadow-md rounded-lg border-l-4 border-[#FBAD04] flex items-center p-4 justify-self-center 2xl:max-w-[350px] 2xl:p-4 xl:max-w-[320px] xl:p-3 lg:max-w-[280px] lg:p-3 md:max-w-[300px] md:p-3 sm:max-w-[280px] sm:p-2">                           
-                            <img src={card.image} alt={card.title} className="w-[11px] h-[30px] flex-shrink-0 2xl:w-[11px] 2xl:h-[30px] xl:w-[10px] xl:h-[28px] lg:w-[9px] lg:h-[25px] md:w-[8px] md:h-[22px] sm:w-[7px] sm:h-[20px]" />
-
-                            <div className="ml-4 flex-1 min-w-0 2xl:ml-4 xl:ml-3 lg:ml-3 md:ml-2 sm:ml-2">
-                                <h2 className="font-[orbitron] text-[#FBAD04] text-[13px] 2xl:text-[13px] xl:text-[12px] lg:text-[11px] md:text-[10px] sm:text-[9px]">{card.title}</h2>
-                                <p className="text-white text-[12px] 2xl:text-[12px] xl:text-[11px] lg:text-[10px] md:text-[9px] sm:text-[8px]">{card.text}</p>
-                            </div>
-                        </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className='border-2 border-[#61B8A8] rounded-lg w-[300px] p-5 flex-shrink-0 2xl:w-[300px] 2xl:p-5 xl:w-[280px] xl:p-4 lg:w-[350px] lg:p-4 lg:mt-4 md:w-[320px] md:p-4 md:mt-4 sm:w-[280px] sm:p-3 sm:mt-4'>
-                    
-                    <div className='flex justify-between items-center mb-[10px] gap-2 2xl:mb-[10px] xl:mb-[8px] lg:mb-[8px] md:mb-[6px] sm:mb-[6px]'>
-                        <img src={c4} alt="" className='flex-shrink-0 2xl:w-auto xl:w-auto lg:w-auto md:w-auto sm:w-[16px]'/>
-                        <h3 className='font-[orbitron] text-white text-right 2xl:text-sm xl:text-sm lg:text-sm md:text-xs sm:text-xs'>START YOUR <span className='text-[#FBAD04]'>QUEST</span></h3>
-                    </div>
-                    
-                    <div className='p-[10px] border-l-1 border-[#374151] 2xl:p-[10px] xl:p-[8px] lg:p-[8px] md:p-[6px] sm:p-[6px]'>
-                        <p className='text-gray-400 text-[11px] 2xl:text-[11px] xl:text-[10px] lg:text-[10px] md:text-[9px] sm:text-[8px]'>Don't just play games-create them! Apply now and start your journey in Game Development & interractive Media.</p>
-                    </div>
-                    
-                    <div className='flex justify-center items-center w-full bg-[#FBAD04] h-[40px] rounded-lg mt-[20px] cursor-pointer hover:bg-[#61B8A8] transition-all duration-300 border-b-4 border-[#926b18] hover:border-[#FBAD04] 2xl:h-[40px] 2xl:mt-[20px] xl:h-[36px] xl:mt-[18px] lg:h-[36px] lg:mt-[16px] md:h-[32px] md:mt-[14px] sm:h-[30px] sm:mt-[12px]'>
-                        <p className='font-[orbitron] text-[12px] 2xl:text-[12px] xl:text-[11px] lg:text-[11px] md:text-[10px] sm:text-[9px]'>JOIN THE GUILD🎮</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+const InfoCard = ({ image, title, text }) => (
+  <div className="w-full max-w-[350px] bg-[#2A3443] shadow-md rounded-lg border-l-4 border-[#FBAD04] flex items-center p-4">
+    <img src={image} alt={title} loading="lazy" className="w-5 h-8 md:w-6 md:h-10 flex-shrink-0" />
+    <div className="ml-4 flex-1 min-w-0">
+      <h2 className="font-[orbitron] text-[#FBAD04] text-sm md:text-base">{title}</h2>
+      <p className="text-white text-xs md:text-sm">{text}</p>
     </div>
-  )
-}
+  </div>
+);
 
-export default MissionBriefing
+const MissionBriefing = () => {
+  return (
+    <div className='bg-[#141A28] w-full flex justify-center p-6 sm:p-4'>
+      <div className='border p-6 w-full max-w-[1280px] border-[#FBAD04] flex flex-col items-center rounded-lg'>
 
+        
+        <div className='border-b border-[#374151] w-full flex flex-wrap justify-between items-center gap-4 p-4'>
+          <div className='flex items-center gap-3'>
+            <img src={missionImg} alt="Mission" className='w-4 md:w-5' />
+            <h1 className='text-white font-[orbitron] font-bold text-sm md:text-base'>
+              MISSION <span className='text-[#FBAD04]'>BRIEFING</span>
+            </h1>
+          </div>
+          <div className='rounded-lg bg-[#374151] text-xs md:text-sm w-fit px-4 py-1'>
+            <p className='text-[#FBAD04] font-[orbitron]'>MISSION ID: GO 2025</p>
+          </div>
+        </div>
+
+        
+        <div className='w-full flex flex-col md:flex-row justify-between items-start gap-6 p-6'>
+
+        
+          <div className='flex flex-col flex-1'>
+            <p className='text-[#61B8A8] text-left text-xs md:text-sm font-[orbitron] mb-4 ml-0 sm:ml-4'>
+              EVERYTHING YOU NEED TO KNOW ABOUT YOUR GAME DEV JOURNEY
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {cards.map(card => (
+                <InfoCard key={card.id} {...card} />
+              ))}
+            </div>
+          </div>
+
+          
+          <div className='border-2 border-[#61B8A8] rounded-lg w-full max-w-[350px] p-4 mt-6 md:mt-0 flex-shrink-0'>
+            <div className='flex items-center justify-between mb-4 gap-2'>
+              <img src={c4} alt="Quest Icon" className='w-5 md:w-6' />
+              <h3 className='font-[orbitron] text-white text-sm md:text-base text-right'>
+                START YOUR <span className='text-[#FBAD04]'>QUEST</span>
+              </h3>
+            </div>
+
+            <div className='p-2 border-l border-[#374151]'>
+              <p className='text-gray-400 text-xs md:text-sm'>
+                Don't just play games—create them! Apply now and start your journey in Game Development & Interactive Media.
+              </p>
+            </div>
+
+            <div className='flex justify-center items-center w-full bg-[#FBAD04] h-10 md:h-12 rounded-lg mt-5 cursor-pointer hover:bg-[#61B8A8] transition-all duration-300 border-b-4 border-[#926b18] hover:border-[#FBAD04]'>
+              <p className='font-[orbitron] text-xs md:text-sm'>JOIN THE GUILD 🎮</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MissionBriefing;
 
 // import styled from "styled-components";
 // import missionImg from "../../../assets/gamedev-assets/missionImg.svg";

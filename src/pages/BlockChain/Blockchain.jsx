@@ -13,6 +13,13 @@ import previewImg2 from "../../assets/images/svg/previewImage2.svg"
 import previewImg3 from "../../assets/images/svg/previewImage3.svg"
 import previewImg4 from "../../assets/images/svg/previewImage4.svg"
 import previewImg5 from "../../assets/images/svg/previewImage5.svg"
+import Application from './components/Application'
+import earthImg from "../../assets/images/svg/earth.svg"
+import YouIcon from "../../assets/images/svg/YouI.svg"
+import Swap from "../../assets/images/svg/Swap.svg"
+import Swap2 from "../../assets/images/svg/Swap2.svg"
+import Swap3 from "../../assets/images/svg/Swap3.svg"
+import Swap4 from "../../assets/images/svg/Swap4.svg"
 
 
 const fadeInUp = {
@@ -45,27 +52,28 @@ const Blockchain = () => {
       </motion.div>
 
       {/* Lemme add Text Section with fade-in */}
-      <motion.div
-        className='flex justify-center items-center mt-4 text-white'
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        <motion.p
-          className='raleway text-[48px] font-medium w-[50%] text-black'
-          variants={fadeInUp}
-        >
-          Why Learn Blockchain Development?
-        </motion.p>
+     <motion.div
+  className="flex flex-col md:flex-row justify-center items-center mt-4 px-4 text-white gap-6 text-center md:text-left"
+  variants={containerVariants}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+>
+  <motion.p
+    className="raleway text-[32px] md:text-[48px] font-medium w-full md:w-1/2 text-black"
+    variants={fadeInUp}
+  >
+    Why Learn Blockchain Development?
+  </motion.p>
 
-        <motion.p
-          className='w-[400px] text-[#5D5D5D]'
-          variants={fadeInUp}
-        >
-          Learn blockchain development to gain in-demand skills, unlock global opportunities, and build secure, decentralized applications shaping the future of tech.
-        </motion.p>
-      </motion.div>
+  <motion.p
+    className="w-full md:w-[400px] text-[#5D5D5D]"
+    variants={fadeInUp}
+  >
+    Learn blockchain development to gain in-demand skills, unlock global opportunities, and build secure, decentralized applications shaping the future of tech.
+  </motion.p>
+</motion.div>
+
 
       {/* Tomorrow, make sure u add each card 3D Tilt Cards with Motion */}
       <motion.div
@@ -117,6 +125,36 @@ const Blockchain = () => {
       <LearnCard number={"3."} title={"WEB3 INTEGRATION & D.APP DEVELOPMENT"} text={"Learn to connect with Web3 technologies and build decentralized apps that are secure and easy for users. Practice creating projects that let you explore blockchain features and bring ideas to life."}hoverImage={previewImg3}/>
       <LearnCard number={"4."} title={"BLOCKCHAINN SECURITY PRINCIPLES"} text={"Develop practical expertise by working on real-world blockchain security projects, applying core principles to tackle challenges and demonstrate your knowledge and problem-solving skills."} hoverImage={previewImg4}/>
       <LearnCard number={"5."} title={"REAL-WORLD PROJECT EXPERIENCE"} text={"Gain hands-on experience by building real-world blockchain projects, applying your skills to solve practical challenges and showcase your expertise and creativity."} hoverImage={previewImg5}/>
+
+      <div className='flex bg-[#133C8A]  justify-around py-8 mb-12 items-center'>
+
+
+          <div>
+                <img className='w-[400px]' src={earthImg} alt="" />
+             
+          </div>
+
+
+           <div className='text-[#fff] w-[40%]'>
+                  <h3 className=' raleway text-[48px]'>Who Should Apply?</h3>
+              <p className='sora text-[14px] mb-10'>This program equips aspiring developers, beginners, and career switchers with the skills and support to confidently start building in Web3 and blockchain.</p>
+
+
+               <div className='sora flex flex-col gap-8'>
+                <Application icon={YouIcon} text={"You"}/>
+                <Application icon={Swap} text={"Aspiring developers passionate about the future of tech"}/>
+                <Application icon={Swap2} text={"Tech enthusiasts ready to dive into Web3"}/>
+                <Application icon={Swap3} text={"Beginners in programming (with some basic coding skills)"}/>
+                <Application icon={Swap4} text={"Women, career-switchers & curious minds welcomed!"}/>
+           
+              </div>
+              </div>
+
+
+             
+              
+
+      </div>
     </div>
   )
 }
