@@ -51,7 +51,7 @@ const Testimony = () => {
           <p className="text-gray-400 text-sm md:text-base">Everyone who has tried our program, loved it and helped them improve their knowledge in real - world situations</p>
         </div>
 
-        <div className="bg-[#FAFAFA] rounded-lg overflow-hidden">
+        <div className="bg-[#FAFAFA] rounded-lg overflow-hidden ">
           <div className="flex flex-col md:flex-row">
             {/* Image column */}
             <div className="w-full md:w-2/5 bg-[#FAFAFA] flex items-center justify-center p-6">
