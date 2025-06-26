@@ -15,15 +15,15 @@ const WhoApply = () => {
       <div className="max-w-6xl mx-auto px-4 py-8 md:py-12 flex flex-col md:flex-row items-center">
         {/* Left side with image */}
         <div className="w-full md:w-1/3 flex justify-center md:justify-start mb-6 md:mb-0">
-          <div className=" rounded-lg p-1 w-80 h-90 flex items-center justify-center">
+          <div className=" rounded-lg p-1 w-80 h-90 flex items-center justify-center ">
            
-            <img src={africaman} alt="" width={340} height={340} className='rounded-lg' />
+            <img src={africaman} alt="" width={340} height={340} className='rounded-lg '/>
           </div>
         </div>
 
         {/* Right side with content */}
-        <div className="w-full md:w-2/3 md:pl-8">
-          <div className="mb-6">
+        <div className="w-full md:w-2/3 md:pl-8 ">
+          <div className="mb-6 ">
             <button  className="flex  rounded-full w-30  mb-2 bg-[#FBB404] hover:bg-[#] gap-2 items-center ">
               <svg
                   xmlns="http://www.w3.org/2000/svg"
