@@ -4,7 +4,7 @@ import Animation from './Animation'
 const Stats = () => {
   return (
     <div>
-          <div className="bg-white py-12 sm:py-16 -mt-10">
+          <div className=" py-12 sm:py-16 -mt-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-3 gap-y-10 gap-x-20 sm:grid-cols-3 lg:grid-cols-3">
           <div className="flex flex-col items-center relative">
